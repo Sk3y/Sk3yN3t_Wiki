@@ -4,7 +4,8 @@ Diese Datei beschreibt die möglichen Funktionalitäten, um mit der Datenbank zu
 ## Funktionen
 Hier werde ich nach und nach für euch Funktionsaufrufe posten, mit dennen ihr eure Missionen ausstatten könnt.
 
-[[Funktionen-zur-Userabfrage]]
+Ihr kommt zu den Funktionen, indem ihr diesen Links folgt oder rechts die Unterseiten auswählt:
+[[Funktionen-zur-Userabfrage]] | 
 [[Funktionen-zur-Loadoutabfrage]]
 
 **Wichtig:** Alle Rückgabewerte beginnen mit Result und sind mal String, mal Bool und manchmal vielleicht auch Zahl, daher lest euch unten den Rückgabewert durch!
