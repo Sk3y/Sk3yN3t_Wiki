@@ -23,8 +23,8 @@ int = Integer
 bool = Boolean
 
 ### Bisherige Funktionen
-- Abfrage, ob ein Spieler Mitglied der 3.JgKp ist
-- Abfrage des Ranges eines Spielers
-- Befüllen einer Kiste oder eines Fahrzeugs mit einem DB-Loadout
-- Ausrüsten eines Spielers mit einem DB-Loadout
+- [[Abfrage, ob ein Spieler Mitglied der 3.JgKp ist|Funktionen-zur-Userabfrage#memberüberprüfung-eines-spielers]]
+- [[Abfrage des Ranges eines Spielers|Funktionen-zur-Userabfrage#rangabfrage-eines-spielers]]
+- [[Befüllen einer Kiste oder eines Fahrzeugs mit einem DB-Loadout|Funktionen-zur-Loadoutabfrage#kisten-und-fahrzeuge-einmalig-mit-loadout-befüllen]]
+- [[Ausrüsten eines Spielers mit einem DB-Loadout|Funktionen-zur-Loadoutabfrage#spieler-mit-loadout-ausrüsten]]
 - Dialog zur Anzeige aller Loadouts
