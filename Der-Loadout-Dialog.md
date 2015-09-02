@@ -15,11 +15,11 @@ So sieht der Dialog im Spiel aus:
 ![Der Dialog im Spiel](http://www11.pic-upload.de/02.09.15/hg82jo7lwhl.png)
 
 Ein Loadout kann schrittweise gewählt werden, indem
-1. Der gewünschte Zug ausgewählt wird (Daten kommen aus der DB)
-2. Die gewünschte Gruppe ausgewählt wird (Daten kommen aus der DB und richten sich nach 1.)
-3. Der gewünschte Typ ausgewählt wird (Daten kommen aus der DB und richten sich nach 1. und 2.)
-4. Auf den Lade mögl. Loadouts-Button geklickt wird (wird erst aktiv nach 1., 2. und 3.)
-5. Ein Loadout aus der zentralen Liste ausgewählt wird (geht erst nach 4.)
-6. Das gewählte Loadout mit Klick auf den Lade Loadout-Button ausgerüstet wird (geht erst nach 5.)
+ 1. Der gewünschte Zug ausgewählt wird (Daten kommen aus der DB)
+ 2. Die gewünschte Gruppe ausgewählt wird (Daten kommen aus der DB und richten sich nach 1.)
+ 3. Der gewünschte Typ ausgewählt wird (Daten kommen aus der DB und richten sich nach 1. und 2.)
+ 4. Auf den Lade mögl. Loadouts-Button geklickt wird (wird erst aktiv nach 1., 2. und 3.)
+ 5. Ein Loadout aus der zentralen Liste ausgewählt wird (geht erst nach 4.)
+ 6. Das gewählte Loadout mit Klick auf den Lade Loadout-Button ausgerüstet wird (geht erst nach 5.)
 
 Die Nummer hinter dem Loadoutnamen in runden Klammern ist die gesuchte ID für die Funktion [["jgkp_get_loadout" |Funktionen-zur-Loadoutabfrage#spieler-mit-loadout-ausrüsten]]. Damit ist es also auch möglich, eine Einheit oder einen Spieler direkt z.B. durch einen Init-Eintrag oder ein addAction-Eintrag auszurüsten, indem man die gewünschte ID an das Skript übergibt. 
