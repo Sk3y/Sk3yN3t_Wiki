@@ -23,3 +23,5 @@ Ein Loadout kann schrittweise gewählt werden, indem
  6. Das gewählte Loadout mit Klick auf den Lade Loadout-Button ausgerüstet wird (geht erst nach 5.)
 
 Die Nummer hinter dem Loadoutnamen in runden Klammern ist die gesuchte ID für die Funktion [["jgkp_get_loadout" |Funktionen-zur-Loadoutabfrage#spieler-mit-loadout-ausrüsten]]. Damit ist es also auch möglich, eine Einheit oder einen Spieler direkt z.B. durch einen Init-Eintrag oder ein addAction-Eintrag auszurüsten, indem man die gewünschte ID an das Skript übergibt. 
+
+Die Informationen zu den Truppenkörperabzeichen sind aus praktischen Gründen tatsächlich im Dialog hardgecodet, da sich hierfür eine eigene DB nicht wirklich lohnt und die Information auch nicht zwangsläufig zu einem Loadout gehört, sondern mehr oder weniger Zusatz ist und vom aktuellen Addon-Status abhängt.
