@@ -62,7 +62,7 @@ Eigene Loadouts:
     handgunitems: text
     assignitems: text
     selectWeapon: text
-    isMedict: inyint(1)
+    isMedic: tinyint(1)
     isEOD: tinyint(1)
     memberOnly: tinyint(1)
 
