@@ -38,31 +38,4 @@ Beispiel:
 
 **Wichtig**: Die Funktion kann einmal innerhalb des neu erstellten Dialogsystems verwendet werden (Button Lade Loadout), oder auch direkt z.B. in der Init-Zeile einer EInheit, sofern man die ID kennt! Diese kann man aber über besagten Dialog in Erfahrung bringen, denn die ID des Loadouts steht hinter dem Namen des Loadouts in runden Klammern!
 
-Eintrag in der DB: Bitte alle Felder, die nur ein Item enthalten (headgear, uniform, vest, selectWeapon, ...) nur mit dem Klassennamen füllen, also "BWA3_G36" z.B.
-
-Für alle Listenfelder (uniformitems, vestitems, backpackitems, weapons, ...) ist die Schreibweise IMMER "Klassname":Anzahl. Also auch bei nur 1 Item immer :1 angeben!
-
-Eigene Loadouts:
-
-    zug: enum('I', 'II', 'III')
-    gruppe: enum('1.', '2.', '3.', 'HFlg', 'SanTrp', 'Nachschub', 'ZugTrp')
-    typ: enum('Flecktarn', 'Tropentarn', 'Besatzung', 'Taucher', 'Nacht')
-    name: varchar(255)
-    headgear: text
-    goggles: text
-    vest: text
-    vestitems: text
-    uniform: text
-    uniformitems: text
-    backpack: text
-    backpackitems: text
-    weapons: text
-    primaryweaponitems: text
-    secondaryweaponitems: text
-    handgunitems: text
-    assignitems: text
-    selectWeapon: text
-    isMedic: tinyint(1)
-    isEOD: tinyint(1)
-    memberOnly: tinyint(1)
 
