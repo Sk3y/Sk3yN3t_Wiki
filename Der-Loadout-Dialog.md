@@ -4,6 +4,17 @@ Um die Loadouts der Datenbank tatsächlich verwenden zu können, ist die Funktio
 
 Außerdem soll die Ausrüstung auch während einer Mission gewechselt/angepasst werden können. Hierzu ist ein System notwendig, dass die Loadouts aus der Datenbank genau dann bereit stellt, wenn man sie abfragen möchte. Diese Aufgabe übernimmt der Loadout-Dialog
 
+## Aufruf
+Der Dialog kann im Spiel über den Befehl
+```SQF
+createDialog "DBLoadoutDialog";
+```
+an beliebiger Stelle erzeugt werden. Dialoge werden im Allgemeinen über die ESC-Taste wieder geschlossen.
+So kann man den Aufruf z.B. an einen Add-Action-Menüeintrag binden:
+```SQF
+object addAction ["Waffenkammer öffnen", {createDialog "DBLoadoutDialog";}];
+```
+
 ## Der Dialog in Übersicht
 ![Der Dialog mit Erklärungen](http://www11.pic-upload.de/02.09.15/iv286zia6pil.png)
 
