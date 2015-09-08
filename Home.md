@@ -28,3 +28,11 @@ bool = Boolean
 - [[Befüllen einer Kiste oder eines Fahrzeugs mit einem DB-Loadout|Funktionen-zur-Loadoutabfrage#kisten-und-fahrzeuge-einmalig-mit-loadout-befüllen]]
 - [[Ausrüsten eines Spielers mit einem DB-Loadout|Funktionen-zur-Loadoutabfrage#spieler-mit-loadout-ausrüsten]]
 - [[Dialog zur Anzeige aller Loadouts|Der-Loadout-Dialog]]
+
+### Wie ist die DB aufgebaut?
+- [[Datenbank-Layout|/Datenbank-Layout]]
+
+### Eigene Loadouts einfügen
+- [[Loadouts-in-die-DB-einfügen|Loadouts-in-die-DB-einfügen]]
+
+###
