@@ -1,4 +1,4 @@
-# 3JGKP_Datenbankfunktionen
+# 3JGKP Datenbankfunktionen
 Diese Datei beschreibt die möglichen Funktionalitäten, um mit der Datenbank zu interagieren
 
 ## Funktionen
