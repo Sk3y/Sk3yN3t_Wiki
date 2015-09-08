@@ -2,7 +2,7 @@
 Diese Datei beschreibt die möglichen Funktionalitäten, um mit der Datenbank zu interagieren
 
 ## Funktionen
-Hier werde ich nach und nach für euch Funktionsaufrufe posten, mit dennen ihr eure Missionen ausstatten könnt.
+Hier werde ich nach und nach für euch Funktionsaufrufe posten, mit denen ihr eure Missionen ausstatten könnt.
 
 Ihr kommt zu den Funktionen, indem ihr diesen Links folgt oder rechts die Unterseiten auswählt:
 [[Funktionen-zur-Userabfrage]] | 
