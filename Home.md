@@ -32,7 +32,7 @@ bool = Boolean
 - [[Dialog zur Anzeige aller Loadouts|Der-Loadout-Dialog]]
 
 ### Der Loadout-Dialog im Spiel
-- [[DBLoadoutDialog|DBLoadoutDialog]]
+- [[Der-Loadout-Dialog|Der-Loadout-Dialog]]
 
 ### Wie ist die DB aufgebaut?
 - [[Datenbank-Layout|Datenbank-Layout]]
