@@ -36,6 +36,6 @@ Beispiel:
 
 *Rückgabewert:* Hier gibt es keinen Rückgabewert. Der Spieler wird automatisch sofort mit dem gewählten Loadout ausgestattet.
 
-**Wichtig**: Die Funktion kann einmal innerhalb des neu erstellten Dialogsystems verwendet werden (Button Lade Loadout), oder auch direkt z.B. in der Init-Zeile einer EInheit, sofern man die ID kennt! Diese kann man aber über besagten Dialog in Erfahrung bringen, denn die ID des Loadouts steht hinter dem Namen des Loadouts in runden Klammern!
+**Wichtig**: Die Funktion kann einmal innerhalb des neu erstellten [[Dialogsystems|Der-Loadout-Dialog]] verwendet werden (Button Lade Loadout), oder auch direkt z.B. in der Init-Zeile einer EInheit, sofern man die ID kennt! Diese kann man aber über besagten Dialog in Erfahrung bringen, denn die ID des Loadouts steht hinter dem Namen des Loadouts in runden Klammern!
 
 
