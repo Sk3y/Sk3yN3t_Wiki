@@ -1,5 +1,5 @@
 # Datenbank-Layout
-Hier erfahr ihr alles, was ihr wissen müsst, um ein Loadout für die Datenbank einzureichen.
+Hier erfahr ihr alles, was ihr wissen müsst, um ein Loadout für die Datenbank [[einzureichen|Loadouts-in-die-DB-einfügen]].
 
 ## Loadout für Spieler
 Die Datenbank verfügt über die folgenden Spalten:
