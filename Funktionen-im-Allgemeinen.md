@@ -35,9 +35,13 @@ Das sorgt dafür, dass die Übergabewerte stets als Liste, Array genannt, überg
 Weil wir die Funktion auf dem Server ausführen lassen, hätte es keinen Sinn, die Funktion direkt etwas zurückgeben zu lassen, davon könnte nur der Server profitieren. Stattdessen erzeugt die Funktion eine nur für sie reservierte Variable, die immer mit `Result` anfängt, sofern die Funktion einen Rückgabewert besitzt. Einige Funktionen haben nur Übergabewerte, aber keine Rückgabewerte, andere genau andersherum. Sofern eine Funktion aber einen Rückgabewert besitzt, könnt ihr in diesem Wiki nachlesen, wie dieser heißt. Nach dem Aufruf der Funktion wird das Ergebnis dann in diese Variable gespeichert. Wie wir bei der Funktion nachlesen können, wird das Ergebnis in `ResultXMLInfo` gespeichert.
 
 Damit ist der Ablauf wie folgt:
+
 1. Ihr sucht euch die gewünschte Funktion aus dem Wiki
+
 2. Ihr lest euch die Übergabewerte durch. Dazu könnt ihr meist den gegebenen Aufruf einfach kopieren und die Werte in den inneren eckigen Klammern durch eure Objekte/Werte ersetzen.
+
 3. Ihr führt die Funktion auf dem Server aus.
+
 4. Falls die Funktion einen Rückgabewert besitzt, lest ihr diesen im Wiki nach und arbeitet damit weiter.
 
 
