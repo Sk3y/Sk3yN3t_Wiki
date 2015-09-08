@@ -30,7 +30,7 @@ bool = Boolean
 - [[Dialog zur Anzeige aller Loadouts|Der-Loadout-Dialog]]
 
 ### Wie ist die DB aufgebaut?
-- [[Datenbank-Layout|/Datenbank-Layout]]
+- [[Datenbank-Layout|Datenbank-Layout]]
 
 ### Eigene Loadouts einfügen
 - [[Loadouts-in-die-DB-einfügen|Loadouts-in-die-DB-einfügen]]
