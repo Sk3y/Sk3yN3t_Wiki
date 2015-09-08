@@ -4,6 +4,8 @@ Diese Datei beschreibt die möglichen Funktionalitäten, um mit der Datenbank zu
 ## Funktionen
 Hier werde ich nach und nach für euch Funktionsaufrufe posten, mit denen ihr eure Missionen ausstatten könnt.
 
+**neu** Bitte bei wenig SQF-Erfahrung zuerst den kurzen Abschnitt über [[Funktionen im Allgemeinen|Funktionen im Allgemeinen]] durchlesen!
+
 Ihr kommt zu den Funktionen, indem ihr diesen Links folgt oder rechts die Unterseiten auswählt:
 [[Funktionen-zur-Userabfrage]] | 
 [[Funktionen-zur-Loadoutabfrage]]
