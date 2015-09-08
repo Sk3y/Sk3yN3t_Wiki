@@ -7,8 +7,11 @@ Bitte lest euch aber zuerst durch, wie die [[DB aufgebaut|Datenbank-Layout]] ist
 ## Der Einfüge-Prozess
 
 Wir unterscheiden **drei verschiedene** Feldertypen:
+
 1. Felder mit nur einem Klassennamen oder einem String
+
 2. Felder mit mehreren Klassennamen **ohne** Anzahl
+
 3. Felder mit mehreren Klassennamen **und mit** Anzahl
 
 Felder vom Typ 1 werden grundsätzlich nur mit dem Klassennamen befüllt, also z.B. `"BWA3-G36"`.
