@@ -10,7 +10,7 @@ https://community.bistudio.com/wiki/squadParams
 
 *Übergabewert:* Spieler oder Einheit (unit), deren Rang erfragt werden soll
 
-*Rückgabewert:* ResultXMLInfo (str)
+*Rückgabewert:* ``ResultXMLInfo`` (str)
 
 Die Ränge kommen mit folgenden Werten zurück, aber nur als Zahl! Bedeutung:
 
@@ -39,4 +39,4 @@ Die Ränge kommen mit folgenden Werten zurück, aber nur als Zahl! Bedeutung:
 
 *Übergabewert:* Spieler oder Einheit (unit), deren Zugehörigkeit geprüft werden soll.
 
-*Rückgabewert:* ResultIsMember (bool): true, falls Spieler in DB, sonst false
+*Rückgabewert:* ``ResultIsMember`` (bool): true, falls Spieler in DB, sonst false
