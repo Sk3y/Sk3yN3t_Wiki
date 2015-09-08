@@ -19,3 +19,25 @@ Das soll als Vorbemerkung genügen. Jetzt schauen wir uns eine Funktion für die
 ```SQF
   ["jgkp_get_rank",[player]] call CBA_fnc_clientToServerEvent;
 ```
+
+Obwohl wir im Spiel für die DB-Funktionen das System der Event-Handler verwenden, ist es für euch als Benutzer nicht wichtig, sich mit Event-Handlern auszukennen.
+
+Zunächst muss eine Funktion aufgerufen werden. In unserem obigen Beispiel geschah dies durch Angabe des Namens `add()` und Angabe der Übergabewerte. In SQF wird eine Funktion, wenn es ein Event-Handler ist, über `call CBA_fnc_clientToServerEvent` aufgerufen, jedenfalls wenn die Funktion auf dem Server laufen soll, was unsere Absicht ist. Dieser Abschnitt ist also für **alle** Funktionen gleich! Ihr braucht diesen Code folglich nicht weiter zu beachten.
+
+Was bleibt dann noch? Wir müssen über den "Namen" der Funktion, die Übergabewerte und die Rückgabewerte sprechen. Der Aufruf mittels `call` erwartet zunächst einmal eckige Klammern, daher muss vor jedem call ein `[...]` stehen. Der erste Wert nach der eckigen Klammer ist dann der Name der Funktion bzw. des Event-Handlers. In unserem Beispiel ist das `"jgkp_get_rank"`. Damit sagen wir dem Spiel bzw. dem Server, dass wir bitte die Funktion `"jgkp_get_rank"` auf dem Server ausführen möchten. Diese Funktion, wie im Abschnitt [[Funktionen-zur-Userabfrage#rangabfrage-eines-spielers]] beschrieben, gibt uns Auskunft darüber, ob ein Spieler Mitglied der 3. Jägerkompanie ist. Also erwartet die Funktion einen Übergabewert. Dies muss nicht so sein. Andere Funktionen können auch gar keinen Übergabewert erwarten.
+
+**Übergabewerte folgen immer nach dem Funktionsnamen in einem weiteren Paar eckige Klammern.**
+
+Das sorgt dafür, dass die Übergabewerte stets als Liste, Array genannt, übergeben werden. In unserem Beispiel ist der einzige Übergabewert der Spieler selbst, daher übergeben wir `[player]` als Übergabewert. Damit hat die Funktion alles, was sie braucht, um zu arbeiten.
+
+**Keine DB-Funktion gibt direkt an den Aufrufer einen Rückgabewert zurück. DIeser wird immer in einer separaten Variable gesendet**
+
+Weil wir die Funktion auf dem Server ausführen lassen, hätte es keinen Sinn, die Funktion direkt etwas zurückgeben zu lassen, davon könnte nur der Server profitieren. Stattdessen erzeugt die Funktion eine nur für sie reservierte Variable, die immer mit `Result` anfängt, sofern die Funktion einen Rückgabewert besitzt. Einige Funktionen haben nur Übergabewerte, aber keine Rückgabewerte, andere genau andersherum. Sofern eine Funktion aber einen Rückgabewert besitzt, könnt ihr in diesem Wiki nachlesen, wie dieser heißt. Nach dem Aufruf der Funktion wird das Ergebnis dann in diese Variable gespeichert. Wie wir bei der Funktion nachlesen können, wird das Ergebnis in `ResultXMLInfo` gespeichert.
+
+Damit ist der Ablauf wie folgt:
+1. Ihr sucht euch die gewünschte Funktion aus dem Wiki
+2. Ihr lest euch die Übergabewerte durch. Dazu könnt ihr meist den gegebenen Aufruf einfach kopieren und die Werte in den inneren eckigen Klammern durch eure Objekte/Werte ersetzen.
+3. Ihr führt die Funktion auf dem Server aus.
+4. Falls die Funktion einen Rückgabewert besitzt, lest ihr diesen im Wiki nach und arbeitet damit weiter.
+
+
