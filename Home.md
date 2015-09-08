@@ -31,6 +31,9 @@ bool = Boolean
 - [[Ausrüsten eines Spielers mit einem DB-Loadout|Funktionen-zur-Loadoutabfrage#spieler-mit-loadout-ausrüsten]]
 - [[Dialog zur Anzeige aller Loadouts|Der-Loadout-Dialog]]
 
+### Der Loadout-Dialog im Spiel
+- [[DBLoadoutDialog|DBLoadoutDialog]]
+
 ### Wie ist die DB aufgebaut?
 - [[Datenbank-Layout|Datenbank-Layout]]
 
