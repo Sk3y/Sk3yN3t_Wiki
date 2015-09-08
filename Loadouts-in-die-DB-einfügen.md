@@ -49,4 +49,5 @@ Eigene Loadouts:
 Um diesen Prozess übersichtlicher und benutzerfreundlicher zu gestalten, haben wir ein Formular entwickelt, dass euch als Eingabemaske dient. Dieses Formular besitzt bei fast jedem Feld über reguläre Prüfausdrücke, die genau die verlangte Form abprüfen und bei Fehlern ein Absenden verbieten. Daher ist es möglich, das Formular quasi die Fehlerüberprüfung durchführen zu lassen. Das Formular erkennt z.B. Namen, die mit Zahlen anfangen, Paare, wie "abc:1", bei denen das ";" am Ende fehlt usw. Natürlich können nicht alle Fehler (z.B. "abc__abc:1;", zwei Mal "_") abgefangen werden, aber es ist dennoch eine große Hilfe. Wir fügen eure Abgabe dann als csv-Datei per Import-Funktion in die DB ein.
 
 Hier also der Link:
-https://docs.google.com/forms/d/1gGk9CMg4pjWwtdUKJ3GNcLYqyNFRDtcRJvO3AJ117M0/viewform
+
+http://goo.gl/forms/FGTrqoJQdn
