@@ -40,8 +40,8 @@ Eigene Loadouts:
     handgunitems: text
     assignitems: text
     selectWeapon: text
-    isMedic: {0,1}
-    isEOD: {0,1,2}
+    isMedic: {0,1,2}
+    isEOD: {0,1}
     memberOnly: {0,1}
 
 ## Das Loadout-Formular
