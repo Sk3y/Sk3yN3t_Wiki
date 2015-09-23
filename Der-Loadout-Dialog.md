@@ -7,12 +7,12 @@ Außerdem soll die Ausrüstung auch während einer Mission gewechselt/angepasst 
 ## Aufruf
 Der Dialog kann im Spiel über den Befehl
 ```SQF
-createDialog "DBLoadoutDialog";
+createDialog "DBLoadoutEntry";
 ```
 an beliebiger Stelle erzeugt werden. Dialoge werden im Allgemeinen über die ESC-Taste wieder geschlossen.
 So kann man den Aufruf z.B. an einen Add-Action-Menüeintrag binden:
 ```SQF
-object addAction ["Waffenkammer öffnen", {createDialog "DBLoadoutDialog";}];
+object addAction ["Waffenkammer öffnen", {createDialog "DBLoadoutEntry";}];
 ```
 
 ## Der Dialog in Übersicht
