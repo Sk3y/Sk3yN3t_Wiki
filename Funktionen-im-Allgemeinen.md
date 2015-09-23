@@ -44,7 +44,7 @@ Damit ist der Ablauf wie folgt:
 
 4. Falls die Funktion einen Rückgabewert besitzt, lest ihr diesen im Wiki nach und arbeitet damit weiter.
 
-Ihr könnt also z.B. den Rang abfragen und dann ResultXMLInfo weiter benutzen. Wichtig ist, dass der Rückgabewert ein String ist:
+Ihr könnt also z.B. den Rang abfragen und dann `ResultXMLRang` weiter benutzen. Wichtig ist, dass der Rückgabewert ein String ist:
 ```SQF
 ["jgkp_get_rank",[player]] call CBA_fnc_clientToServerEvent;
 waitUntil{!isNil "ResultXMLRang"};
