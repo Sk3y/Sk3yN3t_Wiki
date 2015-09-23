@@ -32,7 +32,7 @@ Das sorgt dafür, dass die Übergabewerte stets als Liste, Array genannt, überg
 
 **Keine DB-Funktion gibt direkt an den Aufrufer einen Rückgabewert zurück. DIeser wird immer in einer separaten Variable gesendet**
 
-Weil wir die Funktion auf dem Server ausführen lassen, hätte es keinen Sinn, die Funktion direkt etwas zurückgeben zu lassen, davon könnte nur der Server profitieren. Stattdessen erzeugt die Funktion eine nur für sie reservierte Variable, die immer mit `Result` anfängt, sofern die Funktion einen Rückgabewert besitzt. Einige Funktionen haben nur Übergabewerte, aber keine Rückgabewerte, andere genau andersherum. Sofern eine Funktion aber einen Rückgabewert besitzt, könnt ihr in diesem Wiki nachlesen, wie dieser heißt. Nach dem Aufruf der Funktion wird das Ergebnis dann in diese Variable gespeichert. Wie wir bei der Funktion nachlesen können, wird das Ergebnis in `ResultXMLInfo` gespeichert.
+Weil wir die Funktion auf dem Server ausführen lassen, hätte es keinen Sinn, die Funktion direkt etwas zurückgeben zu lassen, davon könnte nur der Server profitieren. Stattdessen erzeugt die Funktion eine nur für sie reservierte Variable, die immer mit `Result` anfängt, sofern die Funktion einen Rückgabewert besitzt. Einige Funktionen haben nur Übergabewerte, aber keine Rückgabewerte, andere genau andersherum. Sofern eine Funktion aber einen Rückgabewert besitzt, könnt ihr in diesem Wiki nachlesen, wie dieser heißt. Nach dem Aufruf der Funktion wird das Ergebnis dann in diese Variable gespeichert. Wie wir bei der Funktion nachlesen können, wird das Ergebnis in `ResultXMLRang` gespeichert.
 
 Damit ist der Ablauf wie folgt:
 
@@ -47,8 +47,8 @@ Damit ist der Ablauf wie folgt:
 Ihr könnt also z.B. den Rang abfragen und dann ResultXMLInfo weiter benutzen. Wichtig ist, dass der Rückgabewert ein String ist:
 ```SQF
 ["jgkp_get_rank",[player]] call CBA_fnc_clientToServerEvent;
-waitUntil{!isNil "ResultXMLInfo"};
-_rang = parseNumber ResultXMLInfo; //Überführt String in Number
+waitUntil{!isNil "ResultXMLRang"};
+_rang = parseNumber ResultXMLRang; //Überführt String in Number
 if ( _rang > 6) then {
    hint "Du darfst das hier tun...";
    ... // weiterer Code
@@ -56,7 +56,7 @@ if ( _rang > 6) then {
    hint "Dein Rang ist nicht hoch genug...";
 };
 
-ResultXMLInfo = nil; // Var leeren!
+ResultXMLRang = nil; // Var leeren!
 ```
 
 In diesem Beispiel frage ich den Rang eines Spielers (also mir) zunächst ab und warte, bis die Information verfügbar ist. Danach wandle in den Text in eine Zahl um und führe den weiteren Code nur aus, wenn der Rang größer als 6 ist. Andernfalls teile ich dem Spieler mit, dass er leider nicht den erforderlichen Rang besitzt. Am Ende müssen wir die Variable leeren, da in einem nächsten Aufruf durchaus ein Fehler passieren könnte, z.B. wenn wir ein falsches Objekt übergeben. Der Server kann aber keine Fehler an uns zurückmelden, daher wird er einfach gar nichts tun und wir erhalten keine Fehlermeldung. Hätten wir die Variable ResultXMLInfo jetzt nicht klugerweise geleert, so hätte sie immer noch den Rang vom ersten Aufruf gespeichert und wir könnten nie feststellen, ob das ein alter oder der neue Wert ist.
