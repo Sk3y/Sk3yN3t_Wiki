@@ -10,7 +10,7 @@ Die Datenbank verfügt über die folgenden Spalten:
 * `name` legt den Anzeigenamen im Dialog fest. Bitte ebenfalls an die gängige Notation halten!
 * `headgear...selectweapon` sind alles Textfelder, die eure Ausrüstung enthalten. Das Format ist bei einwertigen Feldern NUR der Itemname, bei mehrwertigen Feldern immer Itemname:Anzahl! Bitte auch bei nur einem einzigen Item Itemname:1 angeben
 * `isMedic` kann 0, 1 oder 2 annehmen. Dieses Feld sorgt dafür, dass die Einheit in ACE als Sanitäter oder Arzt erkannt wird. Bei 0 kann sie das San-System quasi nicht verwenden.
-* `isEOD, isMember` sind drei bool'sche Felder, die nur 0 oder 1 sein können, wobei 0 - false und 1 - true entspricht. Die Felder legen fest, ob jemand beim Ausrüsten auch als Medic oder EOD von ACE erkannt wird. isMember legt fest, ob ein Public-Spieler das Loadout laden darf, wenn er nicht in der DB als Mitglied gelistet ist.
+* `isEOD, isMember` sind zwei bool'sche Felder, die nur 0 oder 1 sein können, wobei 0 - false und 1 - true entspricht. Die Felder legen fest, ob jemand beim Ausrüsten auch als Medic oder EOD von ACE erkannt wird. isMember legt fest, ob ein Public-Spieler das Loadout laden darf, wenn er nicht in der DB als Mitglied gelistet ist.
 
 ## Loadout für Kisten und Fahrzeuge
 Diese Datenbank wird noch überarbeitet...
