@@ -28,7 +28,7 @@ Beispiel:
 
 ### Spieler mit Loadout ausrüsten
 ```SQF
-    ["jgkp_get_loadout",[player,id]] call CBA_fnc_clientToServerEvent;
+    ["jgkp_equip_loadout",[player,id]] call CBA_fnc_clientToServerEvent;
 ```
 *Beschreibung:* Liefert den Inhalt des Loadouts für die gegebene ID (PK in DB). 
 
