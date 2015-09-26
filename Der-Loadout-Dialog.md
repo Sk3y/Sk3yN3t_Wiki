@@ -34,7 +34,11 @@ Das folgende Video demonstriert eine aktuelle Version (0.03) des Dialogs. Alle F
 <<https://www.youtube.com/watch?v=lqlcL2GyTSc>>
 
 So sieht der Dialog im Spiel aus:
-![Der Dialog im Spiel](http://www11.pic-upload.de/26.09.15/onkpentfw.png)
+### Loadout Entry
+![Der Dialog Entry im Spiel](http://www11.pic-upload.de/26.09.15/onkpentfw.png)
+
+### Loadout Load
+![Der Dialog Load im Spiel](http://www11.pic-upload.de/26.09.15/xa9yhvbjri2k.png)
 
 Ein Loadout kann schrittweise gewählt werden, indem
  1. Der gewünschte Zug ausgewählt wird (Daten kommen aus der DB)
@@ -44,8 +48,11 @@ Ein Loadout kann schrittweise gewählt werden, indem
  5. Ein Loadout aus der zentralen Liste ausgewählt wird (geht erst nach 4.)
  6. Das gewählte Loadout mit Klick auf den Lade Loadout-Button ausgerüstet wird (geht erst nach 5.)
 
-Die Nummer hinter dem Loadoutnamen in runden Klammern ist die gesuchte ID für die Funktion [["jgkp_get_loadout" |Funktionen-zur-Loadoutabfrage#spieler-mit-loadout-ausrüsten]]. Damit ist es also auch möglich, eine Einheit oder einen Spieler direkt z.B. durch einen Init-Eintrag oder ein addAction-Eintrag auszurüsten, indem man die gewünschte ID an das Skript übergibt. 
-
-## Truppenkörperabzeichen
+### Truppenkörperabzeichen
 
 Die Informationen zu den Truppenkörperabzeichen kommt ebenfalls aus der DB, hierfür gibt es eine ganz einfache kleine zweispaltige Tabelle mit den Spalten name (für die Anzeige im Dialog) und classname (für die Funktion `BIS_fnc_setUnitInsignia`). D.h. auch diese Information muss nicht im Dialog selbst verwaltet werden, sondern kann bequem in der DB angepasst werden. Aber Achtung: Die Insignia kommen aus einem Addon und sind nicht Teil des Standardspiels, daher muss der Inhalt des Addons angepasst werden, wenn man sich andere Patches wünscht.
+
+Die Nummer hinter dem Loadoutnamen in runden Klammern ist die gesuchte ID für die Funktion [["jgkp_get_loadout" |Funktionen-zur-Loadoutabfrage#spieler-mit-loadout-ausrüsten]]. Damit ist es also auch möglich, eine Einheit oder einen Spieler direkt z.B. durch einen Init-Eintrag oder ein addAction-Eintrag auszurüsten, indem man die gewünschte ID an das Skript übergibt. 
+### Loadout Save
+![Der Dialog Save im Spiel](http://www11.pic-upload.de/26.09.15/k4ba2dugb5s.png)
+
