@@ -26,7 +26,7 @@ object addAction ["Waffenkammer öffnen", {createDialog "DBLoadoutEntry";}];
 
 ## Der Dialog in Übersicht
 Das folgende Diagramm zeigt den Ablauf, der zur Anzeige der drei Unterdialoge führt. Dabei ist die Entscheidung nicht als exklusives Oder zu verstehen. Jemand mit den höchsten Rechten kann natürlich immer noch Loadouts laden und speichern, er kann nur zusätzlich Loadouts editieren und sogar per Dialog löschen.
-![Der Dialog mit Erklärungen](http://www11.pic-upload.de/02.09.15/iv286zia6pil.png)
+![Der Dialog mit Erklärungen](http://www11.pic-upload.de/26.09.15/jqdfpff4y9q6.png)
 
 ## Der Dialog im Spiel
 Das folgende Video demonstriert eine aktuelle Version (0.03) des Dialogs. Alle Felder werden aus der DB gespeist, keine Information ist im Dialog selbst als Code hinterlegt!
