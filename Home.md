@@ -12,10 +12,10 @@ Ihr kommt zu den Funktionen, indem ihr diesen Links folgt oder rechts die Unters
 
 **Wichtig:** Alle Rückgabewerte beginnen mit Result und sind mal String, mal Bool und manchmal vielleicht auch Zahl, daher lest euch unten den Rückgabewert durch!
 
-Ebenso solltet ihr darauf achten, nach einer DB-Abfrage den Rückgabewert mit `Result = nil`wieder zu löschen, da ihr ansonsten bei einer erneuten Abfrage nicht entscheiden könnt, ob diese wirklich funktioniert hat oder ihr nicht noch mit dem alten Wert weiterarbeitet!
+Ebenso solltet ihr darauf achten, nach einer DB-Abfrage den Rückgabewert mit `Result<name> = nil`wieder zu löschen, da ihr ansonsten bei einer erneuten Abfrage nicht entscheiden könnt, ob diese wirklich funktioniert hat oder ihr nicht noch mit dem alten Wert weiterarbeitet!
 
 Aktueller Stand des Dialogs:
-<https://youtu.be/S_wDeOHSwlE>
+<https://www.youtube.com/watch?v=lqlcL2GyTSc>
 
 ### Legende
 str = String
