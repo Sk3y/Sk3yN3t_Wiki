@@ -1,6 +1,6 @@
 # Der Loadout-Dialog
 ***
-Um die Loadouts der Datenbank tatsächlich verwenden zu können, ist die Funktion [["jgkp_get_loadout" |Funktionen-zur-Loadoutabfrage#spieler-mit-loadout-ausrüsten]] gedacht. Diese erfordert aber Kenntnis über die ID, mit der das Loadout in der Datenbank gespeichert ist.
+Um die Loadouts der Datenbank tatsächlich verwenden zu können, ist die Funktion [["jgkp_equip_loadout" |Funktionen-zur-Loadoutabfrage#spieler-mit-loadout-ausrüsten]] gedacht. Diese erfordert aber Kenntnis über die ID, mit der das Loadout in der Datenbank gespeichert ist.
 
 Außerdem soll die Ausrüstung auch während einer Mission gewechselt/angepasst werden können. Hierzu ist ein System notwendig, dass die Loadouts aus der Datenbank genau dann bereit stellt, wenn man sie abfragen möchte. Diese Aufgabe übernimmt der Loadout-Dialog
 
