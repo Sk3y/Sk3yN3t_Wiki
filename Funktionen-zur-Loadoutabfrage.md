@@ -32,9 +32,9 @@ Beispiel:
 ```
 *Beschreibung:* Rüstet die übergebene Einheit `unit` mit dem Inhalt des Loadouts für die gegebene ID (PK in DB) aus. 
 
-*Übergabewert:* 
-[*] unit (object): Einheit, die ausgerüstet werden soll, für den Spieler `player` nutzen oder seinen Variablennamen oder `this` innerhalb der Init-Zeile. 
-[*] ID (int): ID (Primary Key) des Loadouteintrags in der DB. Muss in der DB existieren (s.u.).
+*Übergabewert:*
+*unit (object): Einheit, die ausgerüstet werden soll, für den Spieler `player` nutzen oder seinen Variablennamen oder `this` innerhalb der Init-Zeile. 
+*ID (int): ID (Primary Key) des Loadouteintrags in der DB. Muss in der DB existieren (s.u.).
 
 *Rückgabewert:* Hier gibt es keinen Rückgabewert. Der Spieler wird automatisch sofort mit dem gewählten Loadout ausgestattet.
 
