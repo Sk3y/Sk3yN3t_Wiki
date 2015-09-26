@@ -28,14 +28,15 @@ Beispiel:
 
 ### Spieler mit Loadout ausrüsten
 ```SQF
-    ["jgkp_equip_loadout",[player,id]] call CBA_fnc_clientToServerEvent;
+    ["jgkp_equip_loadout",[unit,id]] call CBA_fnc_clientToServerEvent;
 ```
-*Beschreibung:* Liefert den Inhalt des Loadouts für die gegebene ID (PK in DB). 
+*Beschreibung:* Rüstet die übergebene Einheit ``unit` mit dem Inhalt des Loadouts für die gegebene ID (PK in DB) aus. 
 
-*Übergabewert:* ID (int)! ID (Primary Key) des Loadouteintrags in der DB. Muss in der DB existieren (s.u.).
+*Übergabewert:* unit (object): Einheit, die ausgerüstet werden soll, für den Spieler `player` nutzen oder seinen Variablennamen oder `this` innerhalb der Init-Zeile. 
+ID (int): ID (Primary Key) des Loadouteintrags in der DB. Muss in der DB existieren (s.u.).
 
 *Rückgabewert:* Hier gibt es keinen Rückgabewert. Der Spieler wird automatisch sofort mit dem gewählten Loadout ausgestattet.
 
-**Wichtig**: Die Funktion kann einmal innerhalb des neu erstellten [[Dialogsystems|Der-Loadout-Dialog]] verwendet werden (Button Lade Loadout), oder auch direkt z.B. in der Init-Zeile einer EInheit, sofern man die ID kennt! Diese kann man aber über besagten Dialog in Erfahrung bringen, denn die ID des Loadouts steht hinter dem Namen des Loadouts in runden Klammern!
+**Wichtig**: Die Funktion kann entwederinnerhalb des neu erstellten [[Dialogsystems|Der-Loadout-Dialog]] verwendet werden (Button Lade Loadout), oder auch direkt z.B. in der Init-Zeile einer EInheit, sofern man die ID kennt! Diese kann man aber über besagten Dialog in Erfahrung bringen, denn die ID des Loadouts steht hinter dem Namen des Loadouts in runden Klammern!
 
 
