@@ -34,7 +34,7 @@ Das folgende Video demonstriert eine aktuelle Version (0.03) des Dialogs. Alle F
 <<https://www.youtube.com/watch?v=lqlcL2GyTSc>>
 
 So sieht der Dialog im Spiel aus:
-![Der Dialog im Spiel](http://www11.pic-upload.de/02.09.15/hg82jo7lwhl.png)
+![Der Dialog im Spiel](http://www11.pic-upload.de/26.09.15/onkpentfw.png)
 
 Ein Loadout kann schrittweise gewählt werden, indem
  1. Der gewünschte Zug ausgewählt wird (Daten kommen aus der DB)
