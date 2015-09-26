@@ -38,7 +38,7 @@ So sieht der Dialog im Spiel aus:
 ![Der Dialog Entry im Spiel](http://www11.pic-upload.de/26.09.15/onkpentfw.png)
 
 ### Loadout Load
-![Der Dialog Load im Spiel](http://www11.pic-upload.de/26.09.15/xa9yhvbjri2k.png)
+![Der Dialog Load im Spiel](http://www11.pic-upload.de/26.09.15/n2jcliifvjt.png)
 
 Ein Loadout kann schrittweise gewählt werden, indem
  1. Der gewünschte Zug ausgewählt wird (Daten kommen aus der DB)
