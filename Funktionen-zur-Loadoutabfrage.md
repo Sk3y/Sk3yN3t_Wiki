@@ -30,7 +30,7 @@ Beispiel:
 ```SQF
     ["jgkp_equip_loadout",[unit,id]] call CBA_fnc_clientToServerEvent;
 ```
-*Beschreibung:* Rüstet die übergebene Einheit ``unit` mit dem Inhalt des Loadouts für die gegebene ID (PK in DB) aus. 
+*Beschreibung:* Rüstet die übergebene Einheit `unit` mit dem Inhalt des Loadouts für die gegebene ID (PK in DB) aus. 
 
 *Übergabewert:* unit (object): Einheit, die ausgerüstet werden soll, für den Spieler `player` nutzen oder seinen Variablennamen oder `this` innerhalb der Init-Zeile. 
 ID (int): ID (Primary Key) des Loadouteintrags in der DB. Muss in der DB existieren (s.u.).
