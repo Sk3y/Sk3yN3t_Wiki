@@ -24,6 +24,15 @@ So kann man den Aufruf z.B. an einen Add-Action-Menüeintrag binden:
 object addAction ["Waffenkammer öffnen", {createDialog "DBLoadoutEntry";}];
 ```
 
+## Einschränkung der Loadouts für Missionsbauer
+
+Der Dialog existiert in zwei Varianten: Mit allen Loadouts, die in der DB gespeichert sind (public + nicht public) sowie einer eingeschränkten Variante für die Public-Server. Mithilfe der folgenden Code-Zeile in der initServer.sqf könnt ihr dem Server eure Wunscheinstellung mitteilen:
+```SQF
+JGKP_DB_onlyPublic = 0|1
+```
+* 0: ist die default-Einstellung und lässt alle Loadouts zu.
+* 1: ist die eingeschränkte Einstellung und lässt nur Loadouts zu, die isPublic = 1 besitzen.
+
 ## Der Dialog in Übersicht
 Das folgende Diagramm zeigt den Ablauf, der zur Anzeige der drei Unterdialoge führt. Dabei ist die Entscheidung nicht als exklusives Oder zu verstehen. Jemand mit den höchsten Rechten kann natürlich immer noch Loadouts laden und speichern, er kann nur zusätzlich Loadouts editieren und sogar per Dialog löschen.
 ![Der Dialog mit Erklärungen](http://www11.pic-upload.de/26.09.15/aohpaq7s6w8c.png)
