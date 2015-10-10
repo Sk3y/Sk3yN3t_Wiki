@@ -77,7 +77,7 @@ Ein Loadout kann gespeichert werden, indem
 Hierbei heißt *public* nicht, dass das Loadout frei verfügbar ist, das ist es auch ohne eine Auswahl. public bedeutet, dass dieses Loadout immer dann erscheint, wenn der Missionsbauer den Dialog einschränkt mithilfe der Variable ``JGKP_DB_onlyPublic = 1``. Dann werden nur die Loadouts angeboten, die bei der Spalte isPublic eine 1 haben und das bewirkt man genau mit der Auswahl public. *member* hingegen bedeutet, dass das Loadout nur verwendet werden kann, wenn man Mitglied der 3. Jägerkompanie ist. Logischerweise schließen sich beide Optionen aus.
 
 ### Loadout Edit
-![Der Dialog Edit im Spiel](http://i.imgur.com/DJTvm9q.png)
+![Der Dialog Edit im Spiel](http://i.imgur.com/4rNdoVk.png)
 
 Ein Loadout kann editiert werden, indem
  1. Die entsprechende ID des Loadouts aus der DB eingegeben wird (zB über das Load-Menü)
