@@ -64,15 +64,15 @@ Die Informationen zu den Truppenkörperabzeichen kommt ebenfalls aus der DB, hie
 ![Der Dialog Save im Spiel](http://i.imgur.com/VfMaNfl.png)
 
 Ein Loadout kann gespeichert werden, indem
-1. Der entsprechende Zug aus dem Menü ausgewählt wird (Daten ausnahmsweise fest im DB verankert...)
-2. Ein Name für die Gruppe eingegeben wird
-3. Ein Name für den Typ eingegeben wird
-4. Ein Name für das Loadout eingegeben wird
-5. Die Sanfähigkeit ausgewählt wird (nur eine Option)
-6. Die Pionier-Fähigkeit ausgewählt wird (an/aus)
-7. Die Member-Only-Option ausgewählt wird (an/aus)
-8. Die Zugriffs-Option ausgewählt wird (public oder nur für Member)
-8. Der Button "Loadout speichern" geklickt wird.
+ 1. Der entsprechende Zug aus dem Menü ausgewählt wird (Daten ausnahmsweise fest im DB verankert...)
+ 2. Ein Name für die Gruppe eingegeben wird
+ 3. Ein Name für den Typ eingegeben wird
+ 4. Ein Name für das Loadout eingegeben wird
+ 5. Die Sanfähigkeit ausgewählt wird (nur eine Option)
+ 6. Die Pionier-Fähigkeit ausgewählt wird (an/aus)
+ 7. Die Member-Only-Option ausgewählt wird (an/aus)
+ 8. Die Zugriffs-Option ausgewählt wird (public oder nur für Member)
+ 9. Der Button "Loadout speichern" geklickt wird.
 
 Hierbei heißt *public* nicht, dass das Loadout frei verfügbar ist, das ist es auch ohne eine Auswahl. public bedeutet, dass dieses Loadout immer dann erscheint, wenn der Missionsbauer den Dialog einschränkt mithilfe der Variable ``JGKP_DB_onlyPublic = 1``. Dann werden nur die Loadouts angeboten, die bei der Spalte isPublic eine 1 haben und das bewirkt man genau mit der Auswahl public. *member* hingegen bedeutet, dass das Loadout nur verwendet werden kann, wenn man Mitglied der 3. Jägerkompanie ist. Logischerweise schließen sich beide Optionen aus.
 
@@ -80,12 +80,12 @@ Hierbei heißt *public* nicht, dass das Loadout frei verfügbar ist, das ist es 
 ![Der Dialog Edit im Spiel](http://i.imgur.com/DJTvm9q.png)
 
 Ein Loadout kann editiert werden, indem
-1. Die entsprechende ID des Loadouts aus der DB eingegeben wird (zB über das Load-Menü)
-2. Der Button "Lade Loadout gemäß ID" geklickt wird (es kann zu zwei versch. Fehlern kommen!)
-3. Einer der 22 Buttons unter der Inhalt-Box geklickt wird (man kann jeweils nur eine Spalte gleichzeitig ändern, aber versch. Änderungen speichern)
-4. Die gewünschte Änderung in der zentralen Inhalts-Box vorgenommen wird
-5. Die Änderung mit einem Klick auf den jetzt weiß gewordenen Button "Änderungen speichern" temporär gesichert wird!
-6. Schritte 3-5 beliebig oft wiederholen
-7. Abschließend der Button "Änderungen übernehmen" geklickt wird.
+ 1. Die entsprechende ID des Loadouts aus der DB eingegeben wird (zB über das Load-Menü)
+ 2. Der Button "Lade Loadout gemäß ID" geklickt wird (es kann zu zwei versch. Fehlern kommen!)
+ 3. Einer der 22 Buttons unter der Inhalt-Box geklickt wird (man kann jeweils nur eine Spalte gleichzeitig ändern, aber versch. Änderungen speichern)
+ 4. Die gewünschte Änderung in der zentralen Inhalts-Box vorgenommen wird
+ 5. Die Änderung mit einem Klick auf den jetzt weiß gewordenen Button "Änderungen speichern" temporär gesichert wird!
+ 6. Schritte 3-5 beliebig oft wiederholen
+ 7. Abschließend der Button "Änderungen übernehmen" geklickt wird.
 
 **wichtig**: Die Änderungen werden durch den Button "speichern" nur temporär übernommen. Man kann sich davon überzeugen, indem man zB. bei "Zug" eine Änderung vornimmt, diese speichert und anschließend wieder "Zug" drückt. Die Änderung ist dann im Inhalts-Fenster sichtbar. ABER die Änderung ist noch nicht in der DB und geht beim Schließen auch verloren. Daher muss nach Abschluss der Arbeit noch auf "Änderungen übernehmen" geklickt werden, was alle gemachten Änderungen in die DB überträgt.
