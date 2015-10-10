@@ -68,7 +68,7 @@ Ein Loadout kann gespeichert werden, indem
  2. Ein Name für die Gruppe eingegeben wird
  3. Ein Name für den Typ eingegeben wird
  4. Ein Name für das Loadout eingegeben wird
- 5. Die Sanfähigkeit ausgewählt wird (nur eine Option)
+ 5. Die Sanfähigkeit ausgewählt wird (Wahl zwischen 0, 1 oder 2)
  6. Die Pionier-Fähigkeit ausgewählt wird (an/aus)
  7. Die Member-Only-Option ausgewählt wird (an/aus)
  8. Die Zugriffs-Option ausgewählt wird (public oder nur für Member)
