@@ -37,7 +37,7 @@ bool = Boolean
 ### Wie ist die DB aufgebaut?
 - [[Datenbank-Layout|Datenbank-Layout]]
 
-### Eigene Loadouts einfügen
+### Eigene Loadouts Offline einfügen
 - [[Loadouts-in-die-DB-einfügen|Loadouts-in-die-DB-einfügen]]
 
 ###
