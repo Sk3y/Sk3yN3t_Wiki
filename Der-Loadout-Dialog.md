@@ -81,5 +81,11 @@ Hierbei heißt *public* nicht, dass das Loadout frei verfügbar ist, das ist es 
 
 Ein Loadout kann editiert werden, indem
 1. Die entsprechende ID des Loadouts aus der DB eingegeben wird (zB über das Load-Menü)
+2. Der Button "Lade Loadout gemäß ID" geklickt wird (es kann zu zwei versch. Fehlern kommen!)
+3. Einer der 22 Buttons unter der Inhalt-Box geklickt wird (man kann jeweils nur eine Spalte gleichzeitig ändern, aber versch. Änderungen speichern)
+4. Die gewünschte Änderung in der zentralen Inhalts-Box vorgenommen wird
+5. Die Änderung mit einem Klick auf den jetzt weiß gewordenen Button "Änderungen speichern" temporär gesichert wird!
+6. Schritte 3-5 beliebig oft wiederholen
+7. Abschließend der Button "Änderungen übernehmen" geklickt wird.
 
-
+**wichtig**: Die Änderungen werden durch den Button "speichern" nur temporär übernommen. Man kann sich davon überzeugen, indem man zB. bei "Zug" eine Änderung vornimmt, diese speichert und anschließend wieder "Zug" drückt. Die Änderung ist dann im Inhalts-Fenster sichtbar. ABER die Änderung ist noch nicht in der DB und geht beim Schließen auch verloren. Daher muss nach Abschluss der Arbeit noch auf "Änderungen übernehmen" geklickt werden, was alle gemachten Änderungen in die DB überträgt.
