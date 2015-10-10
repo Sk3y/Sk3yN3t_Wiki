@@ -14,17 +14,17 @@ Alle folgenden Funktionen dienen dazu, Loadouts aus der DB zur Verfügung zu ste
 
 Eigenes Kisten-Loadout? Benötigt wird ein Loadoutname, Items, Rucksäcke, Waffen und Magazine.
 
-**Wichtig:** Immer auf das Format achten! "Item":Anzahl;"Item":Anzahl! Nicht : und ; verwechseln!
+**Wichtig:** Immer auf das Format achten! "Item"~Anzahl;"Item"~Anzahl! Nicht ~ und ; verwechseln!
 
 Beispiel:
 
-(Items) BWA3_optic_20x50_NSV:1;BWA3_Vector:5;ItemMap:5;AGM_MapTools:5;tf_anprc148jem:5 // 1x NSV + 5x Vector + 5 Karten + 5 Maptools und 5 kleine Funken
+(Items) BWA3_optic_20x50_NSV~1;BWA3_Vector~5;ItemMap~5;AGM_MapTools~5;tf_anprc148jem~5; // 1x NSV + 5x Vector + 5 Karten + 5 Maptools und 5 kleine Funken
 
-(Rucksäcke) tf_anprc155:5
+(Rucksäcke) tf_anprc155~5
 
-(Waffen) BWA3_Pzf3:4;BWA3_Fliegerfaust:2
+(Waffen) BWA3_Pzf3~4;BWA3_Fliegerfaust~2
 
-(Magazine) Laserbatteries:5;BWA3_DM25:15;SmokeShellGreen:15;BWA3_30Rnd_556x45_G36_SD:12
+(Magazine) Laserbatteries~5;BWA3_DM25~15;SmokeShellGreen~15;BWA3_30Rnd_556x45_G36_SD~12
 
 ### Spieler mit Loadout ausrüsten
 ```SQF
