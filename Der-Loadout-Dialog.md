@@ -56,7 +56,7 @@ Die Nummer hinter dem Loadoutnamen in runden Klammern ist die gesuchte ID für d
 Die Informationen zu den Truppenkörperabzeichen kommt ebenfalls aus der DB, hierfür gibt es eine ganz einfache kleine zweispaltige Tabelle mit den Spalten name (für die Anzeige im Dialog) und classname (für die Funktion `BIS_fnc_setUnitInsignia`). D.h. auch diese Information muss nicht im Dialog selbst verwaltet werden, sondern kann bequem in der DB angepasst werden. Aber Achtung: Die Insignia kommen aus einem Addon und sind nicht Teil des Standardspiels, daher muss der Inhalt des Addons angepasst werden, wenn man sich andere Patches wünscht.
 
 ### Loadout Save
-![Der Dialog Save im Spiel](http://www11.pic-upload.de/26.09.15/yx5xb9bjivcu.png)
+![Der Dialog Save im Spiel](http://i.imgur.com/VfMaNfl.png)
 
 Ein Loadout kann gespeichert werden, indem
 1. Der entsprechende Zug aus dem Menü ausgewählt wird (Daten ausnahmsweise fest im DB verankert...)
@@ -66,4 +66,7 @@ Ein Loadout kann gespeichert werden, indem
 5. Die Sanfähigkeit ausgewählt wird (nur eine Option)
 6. Die Pionier-Fähigkeit ausgewählt wird (an/aus)
 7. Die Member-Only-Option ausgewählt wird (an/aus)
+8. Die Zugriffs-Option ausgewählt wird (public oder nur für Member)
 8. Der Button "Loadout speichern" geklickt wird.
+
+Hierbei heißt *public* nicht, dass das Loadout frei verfügbar ist, das ist es auch ohne eine Auswahl. public bedeutet, dass dieses Loadout immer dann erscheint, wenn der Missionsbauer den Dialog einschränkt mithilfe der Variable ``JGKP_DB_onlyPublic = 1``. Dann werden nur die Loadouts angeboten, die bei der Spalte isPublic eine 1 haben und das bewirkt man genau mit der Auswahl public. *member* hingegen bedeutet, dass das Loadout nur verwendet werden kann, wenn man Mitglied der 3. Jägerkompanie ist. Logischerweise schließen sich beide Optionen aus.
