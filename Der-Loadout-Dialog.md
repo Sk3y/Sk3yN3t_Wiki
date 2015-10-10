@@ -11,13 +11,6 @@ Der Einstiegsdialog kann über den folgenden Befehl
 createDialog "DBLoadoutEntry";
 ```
 an beliebiger Stelle erzeugt werden. Dialoge werden im Allgemeinen über die ESC-Taste wieder geschlossen.
-Die Unterdialoge können ebenfalls, falls gewünscht, direkt geöffnet werden:
-```SQF
-createDialog "DBLoadoutLoad";
-createDialog "DBLoadoutSave";
-createDialog "DBLoadoutEdit";
-```
-Dabei steht jede Zeile für einen der drei Unterdialoge.
 
 So kann man den Aufruf z.B. an einen Add-Action-Menüeintrag binden:
 ```SQF
@@ -82,3 +75,11 @@ Ein Loadout kann gespeichert werden, indem
 8. Der Button "Loadout speichern" geklickt wird.
 
 Hierbei heißt *public* nicht, dass das Loadout frei verfügbar ist, das ist es auch ohne eine Auswahl. public bedeutet, dass dieses Loadout immer dann erscheint, wenn der Missionsbauer den Dialog einschränkt mithilfe der Variable ``JGKP_DB_onlyPublic = 1``. Dann werden nur die Loadouts angeboten, die bei der Spalte isPublic eine 1 haben und das bewirkt man genau mit der Auswahl public. *member* hingegen bedeutet, dass das Loadout nur verwendet werden kann, wenn man Mitglied der 3. Jägerkompanie ist. Logischerweise schließen sich beide Optionen aus.
+
+### Loadout Edit
+![Der Dialog Edit im Spiel](http://i.imgur.com/DJTvm9q.png)
+
+Ein Loadout kann editiert werden, indem
+1. Die entsprechende ID des Loadouts aus der DB eingegeben wird (zB über das Load-Menü)
+
+
