@@ -89,3 +89,5 @@ Ein Loadout kann editiert werden, indem
  7. Abschließend der Button "Änderungen übernehmen" geklickt wird.
 
 **wichtig**: Die Änderungen werden durch den Button "speichern" nur temporär übernommen. Man kann sich davon überzeugen, indem man zB. bei "Zug" eine Änderung vornimmt, diese speichert und anschließend wieder "Zug" drückt. Die Änderung ist dann im Inhalts-Fenster sichtbar. ABER die Änderung ist noch nicht in der DB und geht beim Schließen auch verloren. Daher muss nach Abschluss der Arbeit noch auf "Änderungen übernehmen" geklickt werden, was alle gemachten Änderungen in die DB überträgt.
+
+**WARNUNG:** Der Edit-Dialog kann nur von Mitgliedern mit entsprechenden Rechten im Kommandostand aufgerufen werden. Danach ist keine weitere Abfrage vorgesehen. Wer das Recht zum Editieren hat (2 im KdtStand), kann ohne Einschränkung alle Loadouts bearbeiten und frei verändern. Wer das Recht zum Löschen hat (3 im KdtStand), kann ohne Einschränkung alle Loadouts löschen. Über jede Aktion wird aber in der log-Tabelle Protokoll geführt, rückgängig gibt es aber nicht!
