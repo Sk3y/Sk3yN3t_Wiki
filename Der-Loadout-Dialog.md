@@ -36,7 +36,7 @@ Das folgende Diagramm zeigt den Ablauf, der zur Anzeige der drei Unterdialoge f√
 
 ## Der Dialog im Spiel
 Das folgende Video demonstriert eine aktuelle Version (0.03) des Dialogs. Alle Felder werden aus der DB gespeist, keine Information ist im Dialog selbst als Code hinterlegt!
-<<https://www.youtube.com/watch?v=lqlcL2GyTSc>>
+<https://youtu.be/Cn301ZJoex0>
 
 So sieht der Dialog im Spiel aus:
 ### Loadout Entry
