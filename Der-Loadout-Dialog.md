@@ -29,9 +29,12 @@ object addAction ["Waffenkammer öffnen", {createDialog "DBLoadoutEntry";}];
 Der Dialog existiert in zwei Varianten: Mit allen Loadouts, die in der DB gespeichert sind (public + nicht public) sowie einer eingeschränkten Variante für die Public-Server. Mithilfe der folgenden Code-Zeile in der initServer.sqf könnt ihr dem Server eure Wunscheinstellung mitteilen:
 ```SQF
 JGKP_DB_onlyPublic = 0|1
+["jgkp_refresh_request"] call CBA_fnc_clientToServerEvent;
 ```
 * 0: ist die default-Einstellung und lässt alle Loadouts zu.
 * 1: ist die eingeschränkte Einstellung und lässt nur Loadouts zu, die isPublic = 1 besitzen.
+
+**wichtig**: Der zweite Befehl ist wichtig, damit die Änderungen auf dem Server übernommen werden. Denn das Addon startet selbst mit dem Wert 0, d.h. allen Loadouts. Nur die Variable zu ändern, hätte erst eine Auswirkung nach dem Drücken des refresh-Buttons! Mit dem zweiten Befehl kann der Missionsbauer sicherstellen, dass die Änderung gleich übernommen wird.
 
 ## Der Dialog in Übersicht
 Das folgende Diagramm zeigt den Ablauf, der zur Anzeige der drei Unterdialoge führt. Dabei ist die Entscheidung nicht als exklusives Oder zu verstehen. Jemand mit den höchsten Rechten kann natürlich immer noch Loadouts laden und speichern, er kann nur zusätzlich Loadouts editieren und sogar per Dialog löschen.
