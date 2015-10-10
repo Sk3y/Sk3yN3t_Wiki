@@ -1,6 +1,9 @@
 # 3JGKP Datenbankfunktionen
 Diese Datei beschreibt die möglichen Funktionalitäten, um mit der Datenbank zu interagieren
 
+# Version
+V 0.04
+
 ## Funktionen
 Hier werde ich nach und nach für euch Funktionsaufrufe posten, mit denen ihr eure Missionen ausstatten könnt.
 
