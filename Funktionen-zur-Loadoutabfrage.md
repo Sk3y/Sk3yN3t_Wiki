@@ -42,7 +42,7 @@ Beispiel:
 
 #### Spieler zu Missionsbeginn ausrüsten
 
-In diesem Falle können wir den obigen Befehl nicht 1:1 verwenden und z.B. in die init-Zeile einer Einheit schreiben, da dies nicht JIP-sicher ist. Denn bei jedem neuen Spieler, der verbindet, wird die init-Zeile aller Objekte erneut ausgeführt, was bei Skriptaufrufen bedeutet, dass auch diese erneut aufgerufen und alle Einheiten mitten in der Mission neu ausgerüstet werden.
+In diesem Falle können wir den obigen Befehl nicht 1:1 verwenden und z.B. in die init-Zeile einer Einheit schreiben, da dies nicht JIP-sicher ist. Denn bei jedem neuen Spieler werden Skripte in der Init-Zeile erneut ausgeführt.
 
 Die Lösung sieht daher zweigeteilt aus:
 1. Erstelle eine `onPlayerRespawn.sqf` mit dem folgenden Inhalt:
@@ -58,6 +58,10 @@ this setVariable ["LoadoutID", id];
 ```   
 
 Diese Zeile fügt jeder Einheit eine Variable `LoadoutID` hinzu. Der Inhalt wird im zweiten Argument `id` festgelegt. Hier müsst ihr natürlich *eine korrekte ID aus der DB* vergeben. D.h. ihr überlegt euch, welches Loadout die Einheit zu Missionsbeginn erhalten soll und speichert die zugehörige ID mit dem Befehl `setVariable` mit der Einheit. Diese erhält dann bei jedem Respawn das angegebene Loadout.
+
+#### Loadouts per Add-Action-Menü
+
+Möchtet ihr ein Loadout z.B. fest mit einem Aktionmenüeintrag verbinden, ist dies 
 
 
 
