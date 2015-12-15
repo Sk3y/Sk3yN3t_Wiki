@@ -58,9 +58,9 @@ Die Lösung sieht daher zweigeteilt aus:
     this setVariable ["LoadoutID", id];
     ```   
 
-    Diese Zeile fügt jeder Einheit eine Variable `LoadoutID` hinzu. Der Inhalt wird im zweiten Argument `id` festgelegt. Hier müsst ihr natürlich *eine korrekte ID aus der DB* vergeben. D.h. ihr überlegt euch, welches Loadout die Einheit zu Missionsbeginn erhalten soll und speichert die zugehörige ID mit dem Befehl `setVariable` mit der Einheit. Diese erhält dann bei jedem Respawn das angegebene Loadout.
+    Diese Zeile fügt jeder Einheit eine Variable `LoadoutID` hinzu. Der Inhalt wird im zweiten Argument `id` festgelegt. Hier müsst ihr natürlich **eine korrekte ID aus der DB** vergeben. D.h. ihr überlegt euch, welches Loadout die Einheit zu Missionsbeginn erhalten soll und speichert die zugehörige ID mit dem Befehl `setVariable` mit der Einheit. Diese erhält dann bei jedem Respawn das angegebene Loadout.
 
-*ACHTUNG*: Die Zahl 164 beim Befehl `getVariable` im 1. Schritt sorgt dafür, dass jede Einheit bzw. genauer jeder Spieler, bei dem der zweite Schritt vergessen wurde, standardmäßig das Loadout mit der ID 164 erhält (und damit keinen Fehler produziert).
+**ACHTUNG**: Die Zahl 164 beim Befehl `getVariable` im 1. Schritt sorgt dafür, dass jede Einheit bzw. genauer jeder Spieler, bei dem der zweite Schritt vergessen wurde, standardmäßig das Loadout mit der ID 164 erhält (und damit keinen Fehler produziert).
 
 #### Loadouts per Add-Action-Menü
 
