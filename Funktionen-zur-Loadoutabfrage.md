@@ -46,14 +46,14 @@ In diesem Falle können wir den obigen Befehl nicht 1:1 verwenden und z.B. in di
 
 Die Lösung sieht daher zweigeteilt aus:
 
-    1. Erstelle eine `onPlayerRespawn.sqf` mit dem folgenden Inhalt:
+1. Erstelle eine `onPlayerRespawn.sqf` mit dem folgenden Inhalt:
 
     ```SQF
     ["jgkp_equip_loadout",[player,player getVariable ["LoadoutID",164]] call CBA_fnc_clientToServerEvent;
     ```
     Diese Zeile bewirkt, dass jeder Spieler beim Respawn und zu Missionsbeginn diese Zeile ausführt, die vom Server  das entsprechende Loadout abfragt. Dazu muss der Spieler aber die Variable `LoadoutID` besitzen. Deshalb folgt nun noch der zweite Schritt:
 
-    2. Füge bei jeder Einheit, die zu Missionsbeginn ausgerüstet werden soll, folgende Zeile in die init-Zeile ein:
+2. Füge bei jeder Einheit, die zu Missionsbeginn ausgerüstet werden soll, folgende Zeile in die init-Zeile ein:
     ```SQF
     this setVariable ["LoadoutID", id];
     ```   
@@ -68,7 +68,7 @@ Möchtet ihr ein Loadout z.B. fest mit einem Aktionmenüeintrag verbinden, ist d
 
 ```SQF
 this addAction ["<t color='#00ff00' size='1.2'>Loadout GrpFhr</t>", {
-["jgkp_equip_loadout",[player,player getVariable ["LoadoutID"]] call CBA_fnc_clientToServerEvent;
+["jgkp_equip_loadout",[player,player getVariable ["LoadoutID",164]] call CBA_fnc_clientToServerEvent;
 }];
 ```
 
