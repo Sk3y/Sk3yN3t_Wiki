@@ -40,4 +40,24 @@ Beispiel:
 
 **Wichtig**: Die Funktion kann entweder innerhalb des neu erstellten [[Dialogsystems|Der-Loadout-Dialog]] verwendet werden (Button Lade Loadout), oder auch direkt z.B. in der Init-Zeile einer Einheit, sofern man die ID kennt! Diese kann man aber über besagten [[Dialog|Der-Loadout-Dialog#loadout-load]] in Erfahrung bringen, denn die ID des Loadouts steht hinter dem Namen des Loadouts in runden Klammern!
 
+#### Spieler zu Missionsbeginn ausrüsten
+
+In diesem Falle können wir den obigen Befehl nicht 1:1 verwenden und z.B. in die init-Zeile einer Einheit schreiben, da dies nicht JIP-sicher ist. Denn bei jedem neuen Spieler, der verbindet, wird die init-Zeile aller Objekte erneut ausgeführt, was bei Skriptaufrufen bedeutet, dass auch diese erneut aufgerufen und alle Einheiten mitten in der Mission neu ausgerüstet werden.
+
+Die Lösung sieht daher zweigeteilt aus:
+1. Erstelle eine `onPlayerRespawn.sqf` mit dem folgenden Inhalt:
+
+```SQF
+["jgkp_equip_loadout",[player,player getVariable "LoadoutID"]] call CBA_fnc_clientToServerEvent;
+```
+Diese Zeile bewirkt, dass jeder Spieler beim Respawn und zu Missionsbeginn diese Zeile ausführt, die vom Server das entsprechende Loadout abfragt. Dazu muss der Spieler aber die Variable `LoadoutID` besitzen. Deshalb folgt nun noch der zweite Schritt:
+
+2. Füge beijeder Einheit, die zu Missionsbeginn ausgerüstet werden soll, folgende Zeile in die init-Zeile ein:
+```SQF
+this setVariable ["LoadoutID", id];
+```   
+
+Diese Zeile fügt jeder Einheit eine Variable `LoadoutID` hinzu. Der Inhalt wird im zweiten Argument `id` festgelegt. Hier müsst ihr natürlich *eine korrekte ID aus der DB* vergeben. D.h. ihr überlegt euch, welches Loadout die Einheit zu Missionsbeginn erhalten soll und speichert die zugehörige ID mit dem Befehl `setVariable` mit der Einheit. Diese erhält dann bei jedem Respawn das angegebene Loadout.
+
+
 
