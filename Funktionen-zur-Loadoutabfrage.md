@@ -68,9 +68,11 @@ Möchtet ihr ein Loadout z.B. fest mit einem Aktionmenüeintrag verbinden, ist d
 
 ```SQF
 this addAction ["<t color='#00ff00' size='1.2'>Loadout GrpFhr</t>", {
-["jgkp_equip_loadout",[player,player getVariable ["LoadoutID",164]] call CBA_fnc_clientToServerEvent;
+["jgkp_equip_loadout",[player,164] call CBA_fnc_clientToServerEvent;
 }];
 ```
+
+Dieser Befehl kommt in die jeweilige init-Zeile eurer Kiste/eures Fahrzeuges etc. Das erste Argument enthält den Text des Befehls, der dem Spieler angezeigt wird, hier könnt ihr euch beliebig austoben. Das Beispiel nutzt eine Schrift, die um 20 % vergrößert wurde (`size='1.2'`) und grün ist (`color='#00ff00'`). Das zweite Argument ist ein Code-Block, der aufgerufen wird, sobald der Spieler den Befehl auswählt. Dieser Befehl ist mit dem Befehl im obigen Abschnitt fast identisch, **aber** wir fragen natürlich nicht die Loadout-ID des SPielers ab, sondern geben eine Loadout-ID vor, die eben dem gewünschten Loadout entspricht.
 
 
 
