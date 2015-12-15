@@ -48,7 +48,7 @@ Die Lösung sieht daher zweigeteilt aus:
 1. Erstelle eine `onPlayerRespawn.sqf` mit dem folgenden Inhalt:
 
 ```SQF
-["jgkp_equip_loadout",[player,player getVariable "LoadoutID"]] call CBA_fnc_clientToServerEvent;
+["jgkp_equip_loadout",[player,player getVariable ["LoadoutID",164]] call CBA_fnc_clientToServerEvent;
 ```
 Diese Zeile bewirkt, dass jeder Spieler beim Respawn und zu Missionsbeginn diese Zeile ausführt, die vom Server das entsprechende Loadout abfragt. Dazu muss der Spieler aber die Variable `LoadoutID` besitzen. Deshalb folgt nun noch der zweite Schritt:
 
@@ -59,9 +59,17 @@ this setVariable ["LoadoutID", id];
 
 Diese Zeile fügt jeder Einheit eine Variable `LoadoutID` hinzu. Der Inhalt wird im zweiten Argument `id` festgelegt. Hier müsst ihr natürlich *eine korrekte ID aus der DB* vergeben. D.h. ihr überlegt euch, welches Loadout die Einheit zu Missionsbeginn erhalten soll und speichert die zugehörige ID mit dem Befehl `setVariable` mit der Einheit. Diese erhält dann bei jedem Respawn das angegebene Loadout.
 
+*ACHTUNG*: Die Zahl 164 beim Befehl `getVariable` im 1. Schritt sorgt dafür, dass jede Einheit bzw. genauer jeder Spieler, bei dem der zweite Schritt vergessen wurde, standardmäßig das Loadout mit der ID 164 erhält (und damit keinen Fehler produziert).
+
 #### Loadouts per Add-Action-Menü
 
-Möchtet ihr ein Loadout z.B. fest mit einem Aktionmenüeintrag verbinden, ist dies 
+Möchtet ihr ein Loadout z.B. fest mit einem Aktionmenüeintrag verbinden, ist dies wie folgt möglich:
+
+```SQF
+this addAction ["<t color='#00ff00' size='1.2'>Loadout GrpFhr</t>", {
+["jgkp_equip_loadout",[player,player getVariable ["LoadoutID"]] call CBA_fnc_clientToServerEvent;
+}];
+```
 
 
 
