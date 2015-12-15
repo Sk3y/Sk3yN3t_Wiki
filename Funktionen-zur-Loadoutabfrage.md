@@ -6,23 +6,24 @@ Alle folgenden Funktionen dienen dazu, Loadouts aus der DB zur Verfügung zu ste
 ```SQF
     ["jgkp_fill_crate",[crate,"loadout"]] call CBA_fnc_clientToServerEvent;
 ```
-*Beschreibung:* Mit dieser Zeile könnt ihr per addAction oder Script eine benannte Kiste oder ein Fahrzeug automatisch einmalig mit einem Loadout füllen, das in der DB vorhanden ist (Name "loadout" ist durch den Namen in der DB zu ersetzen)
+**Beschreibung:** Mit dieser Zeile könnt ihr per addAction oder Script eine benannte Kiste oder ein Fahrzeug automatisch einmalig mit einem Loadout füllen, das in der DB vorhanden ist (Name "loadout" ist durch den Namen in der DB zu ersetzen)
 
-*Übergabewert:* Kiste oder Fahrzeug (Object) sowie den Namen des Loadouts (str), der in der DB vorhanden sein muss.
+**Übergabewert:** Kiste oder Fahrzeug (Object) sowie den Namen des Loadouts (str), der in der DB vorhanden sein muss.
 
-*Rückghabewert:* Hier gibt es keinen Rückgabewert. Die Kiste bzw. das Fahrzeug wird sofort beladen.
+**Rückghabewert:** Hier gibt es keinen Rückgabewert. Die Kiste bzw. das Fahrzeug wird sofort beladen.
 
 ### Spieler mit Loadout ausrüsten
 ```SQF
     ["jgkp_equip_loadout",[unit,id]] call CBA_fnc_clientToServerEvent;
 ```
-*Beschreibung:* Rüstet die übergebene Einheit `unit` mit dem Inhalt des Loadouts für die gegebene ID (PK in DB) aus. 
+**Beschreibung:** Rüstet die übergebene Einheit `unit` mit dem Inhalt des Loadouts für die gegebene ID (PK in DB) aus. 
 
-*Übergabewert:*
+**Übergabewert:**
+
 * unit (object): Einheit, die ausgerüstet werden soll, für den Spieler `player` nutzen oder seinen Variablennamen oder `this` innerhalb der Init-Zeile. 
 * ID (int): ID (Primary Key) des Loadouteintrags in der DB. Muss in der DB existieren (s.u.).
 
-*Rückgabewert:* Hier gibt es keinen Rückgabewert. Der Spieler wird automatisch sofort mit dem gewählten Loadout ausgestattet.
+**Rückgabewert:** Hier gibt es keinen Rückgabewert. Der Spieler wird automatisch sofort mit dem gewählten Loadout ausgestattet.
 
 **Wichtig**: Die Funktion kann entweder innerhalb des neu erstellten [[Dialogsystems|Der-Loadout-Dialog]] verwendet werden (Button Lade Loadout), oder auch direkt z.B. in der Init-Zeile einer Einheit, sofern man die ID kennt! Diese kann man aber über besagten [[Dialog|Der-Loadout-Dialog#loadout-load]] in Erfahrung bringen, denn die ID des Loadouts steht hinter dem Namen des Loadouts in runden Klammern!
 
