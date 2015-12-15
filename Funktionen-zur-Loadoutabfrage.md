@@ -45,6 +45,7 @@ Beispiel:
 In diesem Falle können wir den obigen Befehl nicht 1:1 verwenden und z.B. in die init-Zeile einer Einheit schreiben, da dies nicht JIP-sicher ist. Denn bei jedem neuen Spieler werden Skripte in der Init-Zeile erneut ausgeführt.
 
 Die Lösung sieht daher zweigeteilt aus:
+
 1. Erstelle eine `onPlayerRespawn.sqf` mit dem folgenden Inhalt:
 
 ```SQF
@@ -52,7 +53,7 @@ Die Lösung sieht daher zweigeteilt aus:
 ```
 Diese Zeile bewirkt, dass jeder Spieler beim Respawn und zu Missionsbeginn diese Zeile ausführt, die vom Server das entsprechende Loadout abfragt. Dazu muss der Spieler aber die Variable `LoadoutID` besitzen. Deshalb folgt nun noch der zweite Schritt:
 
-2. Füge beijeder Einheit, die zu Missionsbeginn ausgerüstet werden soll, folgende Zeile in die init-Zeile ein:
+2. Füge bei jeder Einheit, die zu Missionsbeginn ausgerüstet werden soll, folgende Zeile in die init-Zeile ein:
 ```SQF
 this setVariable ["LoadoutID", id];
 ```   
