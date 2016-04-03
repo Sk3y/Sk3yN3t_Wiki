@@ -14,7 +14,7 @@ an beliebiger Stelle erzeugt werden. Dialoge werden im Allgemeinen über die ESC
 
 So kann man den Aufruf z.B. an einen Add-Action-Menüeintrag binden:
 ```SQF
-object addAction ["Waffenkammer öffnen", {createDialog "DBCrateEntry";}];
+object addAction ["Logistik-Portal öffnen", {createDialog "DBCrateEntry";}];
 ```
 
 ## Der Dialog im Spiel
