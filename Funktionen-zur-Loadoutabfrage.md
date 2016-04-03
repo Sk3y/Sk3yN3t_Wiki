@@ -1,17 +1,6 @@
 ## Loadout-Funktionen
 Alle folgenden Funktionen dienen dazu, Loadouts aus der DB zur Verfügung zu stellen.
 
-### Kisten und Fahrzeuge einmalig mit Loadout befüllen
-
-```SQF
-    ["jgkp_fill_crate",[crate,"loadout"]] call CBA_fnc_clientToServerEvent;
-```
-**Beschreibung:** Mit dieser Zeile könnt ihr per addAction oder Script eine benannte Kiste oder ein Fahrzeug automatisch einmalig mit einem Loadout füllen, das in der DB vorhanden ist (Name "loadout" ist durch den Namen in der DB zu ersetzen)
-
-**Übergabewert:** Kiste oder Fahrzeug (Object) sowie den Namen des Loadouts (str), der in der DB vorhanden sein muss.
-
-**Rückghabewert:** Hier gibt es keinen Rückgabewert. Die Kiste bzw. das Fahrzeug wird sofort beladen.
-
 ### Spieler mit Loadout ausrüsten
 ```SQF
     ["jgkp_equip_loadout",[unit,id]] call CBA_fnc_clientToServerEvent;
