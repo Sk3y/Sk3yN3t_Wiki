@@ -18,21 +18,12 @@ In diesem Falle können wir den obigen Befehl nicht 1:1 verwenden und z.B. in di
 
 Die Lösung nutzt daher einen Auslöser, der sich um die initiale Beladung kümmert:
 
-1. Erstelle einen Auslöser beliebiger Größe, Einstellungen egal und bei der Bedingung: ```SQF isServer && time > 5```
+1. Erstelle einen Auslöser beliebiger Größe, Einstellungen egal und bei der Bedingung: ```isServer && time > 5```
 
-    ```SQF
-    ["jgkp_equip_loadout",[player,player getVariable ["LoadoutID",164]]] call CBA_fnc_clientToServerEvent;
-    ```
-    Diese Zeile bewirkt, dass jeder Spieler beim Respawn und zu Missionsbeginn diese Zeile ausführt, die vom Server  das entsprechende Loadout abfragt. Dazu muss der Spieler aber die Variable `LoadoutID` besitzen. Deshalb folgt nun noch der zweite Schritt:
+2. Füge dem Auslöser für jede Kiste und jedes Fahrzeug einen Befehl hinzu, der die Kiste bzw. das Fahrzeug mit dem gewünschten Loadout belädt, z.B. : ```["jgkp_fill_crate",[kiste1,1]] call CBA_fnc_clientToServerEvent;```
 
-2. Füge bei jeder Einheit, die zu Missionsbeginn ausgerüstet werden soll, folgende Zeile in die init-Zeile ein:
-    ```SQF
-    this setVariable ["LoadoutID", id];
-    ```   
-
-    Diese Zeile fügt jeder Einheit eine Variable `LoadoutID` hinzu. Der Inhalt wird im zweiten Argument `id` festgelegt. Hier müsst ihr natürlich **eine korrekte ID aus der DB** vergeben. D.h. ihr überlegt euch, welches Loadout die Einheit zu Missionsbeginn erhalten soll und speichert die zugehörige ID mit dem Befehl `setVariable` mit der Einheit. Diese erhält dann bei jedem Respawn das angegebene Loadout.
-
-**ACHTUNG**: Die Zahl 164 beim Befehl `getVariable` im 1. Schritt sorgt dafür, dass jede Einheit bzw. genauer jeder Spieler, bei dem der zweite Schritt vergessen wurde, standardmäßig das Loadout mit der ID 164 erhält (und damit keinen Fehler produziert).
+Der Auslöser sieht dann im Grunde wie folgt aus:
+[Auslöser](http://i.imgur.com/prMIO0J.png)
 
 #### Loadouts per Add-Action-Menü
 
