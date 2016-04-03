@@ -19,6 +19,7 @@ Ebenso solltet ihr darauf achten, nach einer DB-Abfrage den Rückgabewert mit `R
 
 Aktueller Stand des Dialogs:
 <https://youtu.be/Cn301ZJoex0>
+<https://youtu.be/XqgS7TDva9A>
 
 ### Legende
 str = String
