@@ -37,5 +37,8 @@ bool = Boolean
 ### Der Loadout-Dialog im Spiel
 - [[Der-Loadout-Dialog|Der-Loadout-Dialog]]
 
+### Der Logistik-Dialog im SPiel
+- [[Der-Logistik-Dialog|Der-Logistik-Dialog]]
+
 ### Wie ist die DB aufgebaut?
 - [[Datenbank-Layout|Datenbank-Layout]]
