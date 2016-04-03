@@ -23,7 +23,7 @@ Die Lösung nutzt daher einen Auslöser, der sich um die initiale Beladung kümm
 2. Füge dem Auslöser für jede Kiste und jedes Fahrzeug einen Befehl hinzu, der die Kiste bzw. das Fahrzeug mit dem gewünschten Loadout belädt, z.B. : ```["jgkp_fill_crate",[kiste1,1]] call CBA_fnc_clientToServerEvent;```
 
 Der Auslöser sieht dann im Grunde wie folgt aus:
-[Auslöser](http://i.imgur.com/prMIO0J.png)
+![Auslöser](http://i.imgur.com/prMIO0J.png)
 
 #### Loadouts per Add-Action-Menü
 
