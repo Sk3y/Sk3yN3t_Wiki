@@ -55,7 +55,7 @@ Möchtet ihr ein Loadout z.B. fest mit einem Aktionmenüeintrag verbinden, ist d
 
 ```SQF
 this addAction ["<t color='#00ff00' size='1.2'>Loadout GrpFhr</t>", {
-["jgkp_equip_loadout",[player,164] call CBA_fnc_clientToServerEvent;
+["jgkp_equip_loadout",[player,164]] call CBA_fnc_clientToServerEvent;
 }];
 ```
 
