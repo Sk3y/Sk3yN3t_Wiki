@@ -14,4 +14,5 @@ Die Datenbank verfügt über die folgenden Spalten:
 * `isPublic` ist ein bool'sches Feld, das festlegt, ob das Loadout in der [[eingeschränkten Version|https://github.com/Jamesadamar/3JGKP_Datenbankfunktionen/wiki/Der-Loadout-Dialog#einschr%C3%A4nkung-der-loadouts-f%C3%BCr-missionsbauer]] zur Verfügung steht.
 
 ## Loadout für Kisten und Fahrzeuge
-Diese Datenbank wird noch überarbeitet...
+Die Datenbank verfügt über die folgenden Spalten:
+![Tabelle Loadouts in der Datenbank](http://i.imgur.com/SP30HR9.png)
