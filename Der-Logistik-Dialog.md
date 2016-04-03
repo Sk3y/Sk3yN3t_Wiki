@@ -19,7 +19,7 @@ object addAction ["Logistik-Portal öffnen", {createDialog "DBCrateEntry";}];
 
 ## Der Dialog im Spiel
 Das folgende Video demonstriert eine aktuelle Version (0.03) des Dialogs. Alle Felder werden aus der DB gespeist, keine Information ist im Dialog selbst als Code hinterlegt!
-<https://youtu.be/Cn301ZJoex0>
+<https://youtu.be/XqgS7TDva9A>
 
 So sieht der Dialog im Spiel aus:
 ### Loadout Entry
