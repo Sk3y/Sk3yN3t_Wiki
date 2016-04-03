@@ -1,6 +1,6 @@
 # Der Logistik-Dialog
 ***
-Um die Kisten und Fahrzeug Loadouts der Datenbank tatsächlich verwenden zu können, ist die Funktion [["jgkp_fill_crate" | Funktionen-zur-Logistik-Abfrage#kisten-und-fahrzeuge-einmalig-mit-loadout-befüllen]] gedacht. Diese erfordert aber Kenntnis über die ID, mit der das Loadout in der Datenbank gespeichert ist.
+Um die Kisten und Fahrzeug Loadouts der Datenbank tatsächlich verwenden zu können, ist die Funktion [["jgkp_fill_crate" | Funktionen-zur-Logistikabfrage#kisten-und-fahrzeuge-einmalig-mit-loadout-befüllen]] gedacht. Diese erfordert aber Kenntnis über die ID, mit der das Loadout in der Datenbank gespeichert ist.
 
 Außerdem soll die Ausrüstung auch während einer Mission gewechselt/angepasst werden können. Hierzu ist ein System notwendig, dass die Loadouts aus der Datenbank genau dann bereit stellt, wenn man sie abfragen möchte. Diese Aufgabe übernimmt der Logistik-Dialog
 
@@ -35,7 +35,7 @@ Ein Kisten-/Fahrzeug-Loadout kann schrittweise angezeigt werden, indem
 
 Sodann erscheinen in der zentralen Liste alle Loadouts, die in Typ und Variante mit der Auswahl übereinstimmen.
 
-Die Nummer hinter dem Loadoutnamen in runden Klammern ist die gesuchte ID für die Funktion [["jgkp_fill_crate" |Funktionen-zur-Logistik-Abfrage#kisten-und-fahrzeuge-einmalig-mit-loadout-befüllen]]. Damit ist es also auch möglich, eine Kiste oder ein Fahrzeug direkt z.B. durch einen Init-Eintrag oder ein addAction-Eintrag auszurüsten, indem man die gewünschte ID an das Skript übergibt. 
+Die Nummer hinter dem Loadoutnamen in runden Klammern ist die gesuchte ID für die Funktion [["jgkp_fill_crate" |Funktionen-zur-Logistikabfrage#kisten-und-fahrzeuge-einmalig-mit-loadout-befüllen]]. Damit ist es also auch möglich, eine Kiste oder ein Fahrzeug direkt z.B. durch einen Init-Eintrag oder ein addAction-Eintrag auszurüsten, indem man die gewünschte ID an das Skript übergibt. 
 
 ### Loadout Save
 ![Der Dialog Save im Spiel](http://i.imgur.com/fxwh42s.png)
