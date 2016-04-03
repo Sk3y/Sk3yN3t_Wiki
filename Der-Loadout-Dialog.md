@@ -31,7 +31,7 @@ JGKP_DB_onlyPublic = 0|1
 
 ## Der Dialog in Übersicht
 Das folgende Diagramm zeigt den Ablauf, der zur Anzeige der drei Unterdialoge führt. Dabei ist die Entscheidung nicht als exklusives Oder zu verstehen. Jemand mit den höchsten Rechten kann natürlich immer noch Loadouts laden und speichern, er kann nur zusätzlich Loadouts editieren und sogar per Dialog löschen.
-![Der Dialog mit Erklärungen](http://www.pic-upload.de/view-30245298/Loadout-System.png.html)
+![Der Dialog mit Erklärungen]( http://www2.pic-upload.de/img/30245298/Loadout-System.png)
 (in groß: http://www2.pic-upload.de/img/30245298/Loadout-System.png)
 
 ## Der Dialog im Spiel
