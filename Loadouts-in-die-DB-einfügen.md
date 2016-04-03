@@ -47,4 +47,4 @@ Eigene Loadouts:
 ## Der Speicherdialog
 
 Der Speichervogang läuft direkt ingame über den Dialog, daher bitte dort nachlesen:
-[[Der Speicherdialog|Der-Loadout-Dialog#loadout-save
+[[Der Speicherdialog|Der-Loadout-Dialog#loadout-save]]
