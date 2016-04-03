@@ -1,6 +1,6 @@
 # Der Logistik-Dialog
 ***
-Um die Kisten und Fahrzeug Loadouts der Datenbank tatsächlich verwenden zu können, ist die Funktion [["jgkp_fill_crate" | Funktionen-zur-Loadoutabfrage#spieler-mit-loadout-ausrüsten]] gedacht. Diese erfordert aber Kenntnis über die ID, mit der das Loadout in der Datenbank gespeichert ist.
+Um die Kisten und Fahrzeug Loadouts der Datenbank tatsächlich verwenden zu können, ist die Funktion [["jgkp_fill_crate" | Funktionen-zur-Logistik-Abfrage#kisten-und-fahrzeuge-einmalig-mit-loadout-befüllen]] gedacht. Diese erfordert aber Kenntnis über die ID, mit der das Loadout in der Datenbank gespeichert ist.
 
 Außerdem soll die Ausrüstung auch während einer Mission gewechselt/angepasst werden können. Hierzu ist ein System notwendig, dass die Loadouts aus der Datenbank genau dann bereit stellt, wenn man sie abfragen möchte. Diese Aufgabe übernimmt der Logistik-Dialog
 
