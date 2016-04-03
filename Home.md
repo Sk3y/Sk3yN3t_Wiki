@@ -18,7 +18,9 @@ Ihr kommt zu den Funktionen, indem ihr diesen Links folgt oder rechts die Unters
 Ebenso solltet ihr darauf achten, nach einer DB-Abfrage den Rückgabewert mit `Result<name> = nil`wieder zu löschen, da ihr ansonsten bei einer erneuten Abfrage nicht entscheiden könnt, ob diese wirklich funktioniert hat oder ihr nicht noch mit dem alten Wert weiterarbeitet!
 
 Aktueller Stand des Dialogs:
+
 <https://youtu.be/Cn301ZJoex0>
+
 <https://youtu.be/XqgS7TDva9A>
 
 ### Legende
