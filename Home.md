@@ -11,7 +11,7 @@ Hier werde ich nach und nach für euch Funktionsaufrufe posten, mit denen ihr eu
 
 Ihr kommt zu den Funktionen, indem ihr diesen Links folgt oder rechts die Unterseiten auswählt:
 [[Funktionen-zur-Userabfrage]] | 
-[[Funktionen-zur-Loadoutabfrage]]
+[[Funktionen-zur-Loadoutabfrage]] | [[Funktionen-zur-Logistikabfrage]]
 
 **Wichtig:** Alle Rückgabewerte beginnen mit Result und sind mal String, mal Bool und manchmal vielleicht auch Zahl, daher lest euch unten den Rückgabewert durch!
 
