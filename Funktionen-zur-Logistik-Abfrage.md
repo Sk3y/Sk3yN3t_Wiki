@@ -25,17 +25,18 @@ Die Lösung nutzt daher einen Auslöser, der sich um die initiale Beladung kümm
 Der Auslöser sieht dann im Grunde wie folgt aus:
 ![Auslöser](http://i.imgur.com/prMIO0J.png)
 
+Damit führt der Server einmalig nach 5 Sekunden die Befehle in der Aktivierungszeile aus und alle Kisten sind beladen. Alterantiv können die Befehle natürlich auch in die `initServer.sqf` geschrieben werden, hier gibt es mehrere Möglichkeiten. Ihr müsst nur sicherstellen, dass die Befehle einmalig ausgeführt werden und JIP-sicher sind.
+
 #### Loadouts per Add-Action-Menü
 
 Möchtet ihr ein Loadout z.B. fest mit einem Aktionmenüeintrag verbinden, ist dies wie folgt möglich:
 
 ```SQF
 this addAction ["<t color='#00ff00' size='1.2'>Loadout GrpFhr</t>", {
-["jgkp_equip_loadout",[player,164]] call CBA_fnc_clientToServerEvent;
+["jgkp_fill_crate",[crate,id]] call CBA_fnc_clientToServerEvent;
 }];
 ```
-
-Dieser Befehl kommt in die jeweilige init-Zeile eurer Kiste/eures Fahrzeuges etc. Das erste Argument enthält den Text des Befehls, der dem Spieler angezeigt wird, hier könnt ihr euch beliebig austoben. Das Beispiel nutzt eine Schrift, die um 20 % vergrößert wurde (`size='1.2'`) und grün ist (`color='#00ff00'`). Das zweite Argument ist ein Code-Block, der aufgerufen wird, sobald der Spieler den Befehl auswählt. Dieser Befehl ist mit dem Befehl im obigen Abschnitt fast identisch, **aber** wir fragen natürlich nicht die Loadout-ID des Spielers ab, sondern geben eine Loadout-ID vor, die eben dem gewünschten Loadout entspricht.
+Dieser Befehl kommt in die Init-Zeile eines beliebigen Objektes, dass den Aktioneintrag besitzen soll. Wird er ausgeführt, so wird die Kiste mit dem Namen `crate` mit dem Loadout mit der angegebenen `id` befüllt.
 
 
 
