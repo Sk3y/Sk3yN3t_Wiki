@@ -47,5 +47,4 @@ Eigene Loadouts:
 ## Der Speicherdialog
 
 Der Speichervogang läuft direkt ingame über den Dialog, daher bitte dort nachlesen:
-[[Der Speicherdialog|https://github.com/Jamesadamar/3JGKP_Datenbankfunktionen/wiki/Der-Loadout-Dialog#loadout-save]]
-https://github.com/Jamesadamar/3JGKP_Datenbankfunktionen/wiki/Der-Loadout-Dialog#loadout-save
+[[Der Speicherdialog|Der-Loadout-Dialog#loadout-save
