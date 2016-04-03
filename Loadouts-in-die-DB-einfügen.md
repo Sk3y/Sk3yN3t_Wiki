@@ -43,3 +43,9 @@ Eigene Loadouts:
     isMedic: {0,1,2}
     isEOD: {0,1}
     memberOnly: {0,1}
+
+## Der Speicherdialog
+
+Der Speichervogang läuft direkt ingame über den Dialog, daher bitte dort nachlesen:
+[[Der Speicherdialog|https://github.com/Jamesadamar/3JGKP_Datenbankfunktionen/wiki/Der-Loadout-Dialog#loadout-save]]
+https://github.com/Jamesadamar/3JGKP_Datenbankfunktionen/wiki/Der-Loadout-Dialog#loadout-save
