@@ -16,7 +16,7 @@ Die Datenbank verfügt über die folgenden Spalten:
 ## Loadout für Kisten und Fahrzeuge
 Die Datenbank verfügt über die folgenden Spalten:
 
-![Tabelle Loadouts in der Datenbank](http://i.imgur.com/SP30HR9.png)
+![Tabelle Loadouts in der Datenbank](http://i.imgur.com/ldvxhWy.png)
 
 * `id` ist nur für interne Zwecke. Dies ist die eindeutige Identifikationsnummer für ein Loadout in der DB, daher berichtet bitte bei Fehlern die ID des Loadouts. Außerdem brauchen Missionsbauer diese ID, wenn sie Loadouts direkt zu Missionsbeginn vergeben wollen (oder per AddAction).
 * `typ, var` sind die wichtigsten Textfelder. Der Typ von `typ` ist ENUM, d.h. es ist ein Aufzählungstyp und nur die voreingestellten Werte ("Kiste", "Fahrzeug") sind zulässig. `var` kann im Prinzip frei gewählt werden. Braucht ihr weitere Werte, dann bitte mitteilen! Ansonsten versucht euch in das System einzufügen, um unnötige Namen zu vermeiden. Denkt daran, dass diese zwei Werte auch im [[Dialog|Der-Logistik-Dialog#der-dialog-im-spiel]] abgefragt werden!
