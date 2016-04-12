@@ -4,7 +4,7 @@ Alle folgenden Funktionen dienen dazu, Kisten- oder Fahrzeug-Loadouts aus der DB
 ### Kisten und Fahrzeuge einmalig mit Loadout befüllen
 
 ```SQF
-    ["jgkp_fill_crate",[crate,id]] call CBA_fnc_clientToServerEvent;
+    ["jgkp_fill_crate", [crate, id]] spawn CBA_fnc_clientToServerEvent;
 ```
 **Beschreibung:** Mit dieser Zeile könnt ihr per addAction oder Script eine benannte Kiste oder ein Fahrzeug automatisch einmalig mit einem Loadout füllen, das in der DB vorhanden ist (Name "loadout" ist durch den Namen in der DB zu ersetzen)
 
