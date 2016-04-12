@@ -33,7 +33,7 @@ Möchtet ihr ein Loadout z.B. fest mit einem Aktionmenüeintrag verbinden, ist d
 
 ```SQF
 this addAction ["<t color='#00ff00' size='1.2'>Loadout GrpFhr</t>", {
-["jgkp_fill_crate",[crate,id]] call CBA_fnc_clientToServerEvent;
+["jgkp_fill_crate", [crate, id]] spawn CBA_fnc_clientToServerEvent;
 }];
 ```
 Dieser Befehl kommt in die Init-Zeile eines beliebigen Objektes, dass den Aktioneintrag besitzen soll. Wird er ausgeführt, so wird die Kiste mit dem Namen `crate` mit dem Loadout mit der angegebenen `id` befüllt.
