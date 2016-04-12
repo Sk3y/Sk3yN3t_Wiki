@@ -4,7 +4,7 @@ https://community.bistudio.com/wiki/squadParams
 
 ### Rangabfrage eines Spielers
 ```SQF
-    ["jgkp_get_rank",[player]] call CBA_fnc_clientToServerEvent;
+    ["jgkp_get_rank", [player]] spawn CBA_fnc_clientToServerEvent;
 ```
 *Beschreibung:* Gibt den Rang des Spielers anhand seiner UID zurück, wie er in der DB steht. Die ausgegebene Information ist IMMER ein String und ist in der Variable `ResultXMLRang` zu finden.
 
@@ -33,7 +33,7 @@ Die Ränge kommen mit folgenden Werten zurück, aber nur als Zahl! Bedeutung:
 
 ### Memberüberprüfung eines Spielers
 ```SQF
-    ["jgkp_is_member",[player]] call CBA_fnc_clientToServerEvent;           
+    ["jgkp_is_member", [player]] spawn CBA_fnc_clientToServerEvent;           
 ```
 *Beschreibung:* Funktion prüft, ob der Spieler bzw. dessen UID in der DB vorhanden ist. 
 
