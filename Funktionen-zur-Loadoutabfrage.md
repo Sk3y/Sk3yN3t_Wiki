@@ -3,7 +3,7 @@ Alle folgenden Funktionen dienen dazu, Loadouts aus der DB zur Verfügung zu ste
 
 ### Spieler mit Loadout ausrüsten
 ```SQF
-    ["jgkp_equip_loadout",[unit,id]] call CBA_fnc_clientToServerEvent;
+    ["jgkp_equip_loadout",[unit,id]] spawn CBA_fnc_clientToServerEvent;
 ```
 **Beschreibung:** Rüstet die übergebene Einheit `unit` mit dem Inhalt des Loadouts für die gegebene ID (PK in DB) aus. 
 
@@ -25,7 +25,7 @@ Die Lösung sieht daher zweigeteilt aus:
 1. Erstelle eine `onPlayerRespawn.sqf` mit dem folgenden Inhalt:
 
     ```SQF
-    ["jgkp_equip_loadout",[player,player getVariable ["LoadoutID",164]]] call CBA_fnc_clientToServerEvent;
+    ["jgkp_equip_loadout",[player,player getVariable ["LoadoutID",164]]] spawn CBA_fnc_clientToServerEvent;
     ```
     Diese Zeile bewirkt, dass jeder Spieler beim Respawn und zu Missionsbeginn diese Zeile ausführt, die vom Server  das entsprechende Loadout abfragt. Dazu muss der Spieler aber die Variable `LoadoutID` besitzen. Deshalb folgt nun noch der zweite Schritt:
 
@@ -44,7 +44,7 @@ Möchtet ihr ein Loadout z.B. fest mit einem Aktionmenüeintrag verbinden, ist d
 
 ```SQF
 this addAction ["<t color='#00ff00' size='1.2'>Loadout GrpFhr</t>", {
-["jgkp_equip_loadout",[player,164]] call CBA_fnc_clientToServerEvent;
+["jgkp_equip_loadout",[player,164]] spawn CBA_fnc_clientToServerEvent;
 }];
 ```
 
