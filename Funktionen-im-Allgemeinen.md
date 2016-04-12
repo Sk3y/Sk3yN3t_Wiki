@@ -17,14 +17,14 @@ Das soll als Vorbemerkung genügen. Jetzt schauen wir uns eine Funktion für die
 
 ## Die DB-Funktionen
 ```SQF
-  ["jgkp_get_rank",[player]] spawn CBA_fnc_clientToServerEvent;
+  ["jgkp_get_rank",[player]] call CBA_fnc_clientToServerEvent;
 ```
 
 Obwohl wir im Spiel für die DB-Funktionen das System der Event-Handler verwenden, ist es für euch als Benutzer nicht wichtig, sich mit Event-Handlern auszukennen.
 
-Zunächst muss eine Funktion aufgerufen werden. In unserem obigen Beispiel geschah dies durch Angabe des Namens `add()` und Angabe der Übergabewerte. In SQF wird eine Funktion, wenn es ein Event-Handler ist, über `spawn CBA_fnc_clientToServerEvent` aufgerufen, jedenfalls wenn die Funktion auf dem Server laufen soll, was unsere Absicht ist. Dieser Abschnitt ist also für **alle** Funktionen gleich! Ihr braucht diesen Code folglich nicht weiter zu beachten.
+Zunächst muss eine Funktion aufgerufen werden. In unserem obigen Beispiel geschah dies durch Angabe des Namens `add()` und Angabe der Übergabewerte. In SQF wird eine Funktion, wenn es ein Event-Handler ist, über `call CBA_fnc_clientToServerEvent` aufgerufen, jedenfalls wenn die Funktion auf dem Server laufen soll, was unsere Absicht ist. Dieser Abschnitt ist also für **alle** Funktionen gleich! Ihr braucht diesen Code folglich nicht weiter zu beachten.
 
-Was bleibt dann noch? Wir müssen über den "Namen" der Funktion, die Übergabewerte und die Rückgabewerte sprechen. Der Aufruf mittels `spawn` erwartet zunächst einmal eckige Klammern, daher muss vor jedem spawn ein `[...]` stehen. Der erste Wert nach der eckigen Klammer ist dann der Name der Funktion bzw. des Event-Handlers. In unserem Beispiel ist das `"jgkp_get_rank"`. Damit sagen wir dem Spiel bzw. dem Server, dass wir bitte die Funktion `"jgkp_get_rank"` auf dem Server ausführen möchten. Diese Funktion, wie im Abschnitt [[Rangabfrage eines Spielers|Funktionen-zur-Userabfrage#rangabfrage-eines-spielers]] beschrieben, gibt uns Auskunft darüber, ob ein Spieler Mitglied der 3. Jägerkompanie ist. Also erwartet die Funktion einen Übergabewert. Dies muss nicht so sein. Andere Funktionen können auch gar keinen Übergabewert erwarten.
+Was bleibt dann noch? Wir müssen über den "Namen" der Funktion, die Übergabewerte und die Rückgabewerte sprechen. Der Aufruf mittels `call` erwartet zunächst einmal eckige Klammern, daher muss vor jedem call ein `[...]` stehen. Der erste Wert nach der eckigen Klammer ist dann der Name der Funktion bzw. des Event-Handlers. In unserem Beispiel ist das `"jgkp_get_rank"`. Damit sagen wir dem Spiel bzw. dem Server, dass wir bitte die Funktion `"jgkp_get_rank"` auf dem Server ausführen möchten. Diese Funktion, wie im Abschnitt [[Rangabfrage eines Spielers|Funktionen-zur-Userabfrage#rangabfrage-eines-spielers]] beschrieben, gibt uns Auskunft darüber, ob ein Spieler Mitglied der 3. Jägerkompanie ist. Also erwartet die Funktion einen Übergabewert. Dies muss nicht so sein. Andere Funktionen können auch gar keinen Übergabewert erwarten.
 
 **Übergabewerte folgen immer nach dem Funktionsnamen in einem weiteren Paar eckige Klammern.**
 
@@ -46,7 +46,7 @@ Damit ist der Ablauf wie folgt:
 
 Ihr könnt also z.B. den Rang abfragen und dann `ResultXMLRang` weiter benutzen. Wichtig ist, dass der Rückgabewert ein String ist:
 ```SQF
-["jgkp_get_rank",[player]] spawn CBA_fnc_clientToServerEvent;
+["jgkp_get_rank",[player]] call CBA_fnc_clientToServerEvent;
 waitUntil{!isNil "ResultXMLRang"};
 _rang = parseNumber ResultXMLRang; //Überführt String in Number
 if ( _rang > 6) then {
