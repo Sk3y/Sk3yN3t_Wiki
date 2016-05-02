@@ -2,7 +2,7 @@
 Diese Datei beschreibt die möglichen Funktionalitäten, um mit der Datenbank zu interagieren
 
 # Version
-V 1.00
+V 1.10
 
 ## Funktionen
 Hier werde ich nach und nach für euch Funktionsaufrufe posten, mit denen ihr eure Missionen ausstatten könnt.
