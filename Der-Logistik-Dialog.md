@@ -17,6 +17,10 @@ So kann man den Aufruf z.B. an einen Add-Action-Menüeintrag binden:
 object addAction ["Logistik-Portal öffnen", {createDialog "DBCrateEntry";}];
 ```
 
+## Kisten und Fahrzeuge spawnen
+Damit Kisten und Fahrzeuge spawnen können, muss ein Objekt (kein Marker!) mit dem speziellen Namen `JGKP_DB_crate_spawn` vorhanden sein. Es kann ein beliebiges Objekt gewählt werden (z.B. Ölfleck, Area-Objekt aus VR), dass als Spawnpunkt dient. Das Skript spawnt dann die Kiste mit dem Klassennamen, der in der DB hinterlegt ist (beim Speichern wird jede Kiste und jedes Fahrzeug mit seinem Classname gespeichert).
+
+
 ## Der Dialog im Spiel
 Das folgende Video demonstriert eine aktuelle Version (0.03) des Dialogs. Alle Felder werden aus der DB gespeist, keine Information ist im Dialog selbst als Code hinterlegt!
 <https://youtu.be/XqgS7TDva9A>
