@@ -30,7 +30,7 @@ So sieht der Dialog im Spiel aus:
 ![Der Dialog Entry im Spiel](http://i.imgur.com/u0O6Hyz.png)
 
 ### Loadout Load
-![Der Dialog Load im Spiel](http://i.imgur.com/yM0HGtF.png)
+![Der Dialog Load im Spiel](http://i.imgur.com/zdqzcsL.png)
 
 Ein Kisten-/Fahrzeug-Loadout kann schrittweise angezeigt werden, indem
  1. Der gewünschte Typ ausgewählt wird (Daten kommen aus der DB)
@@ -40,6 +40,12 @@ Ein Kisten-/Fahrzeug-Loadout kann schrittweise angezeigt werden, indem
 Sodann erscheinen in der zentralen Liste alle Loadouts, die in Typ und Variante mit der Auswahl übereinstimmen.
 
 Die Nummer hinter dem Loadoutnamen in runden Klammern ist die gesuchte ID für die Funktion [["jgkp_fill_crate" |Funktionen-zur-Logistikabfrage#kisten-und-fahrzeuge-einmalig-mit-loadout-befüllen]]. Damit ist es also auch möglich, eine Kiste oder ein Fahrzeug direkt z.B. durch einen Init-Eintrag oder ein addAction-Eintrag auszurüsten, indem man die gewünschte ID an das Skript übergibt. 
+
+#### Kisten / Fahrzeuge spawnen
+
+Ab sofort gibt es in Kombination mit einem Objekt mit dem Variablennamen `JGKP_DB_crate_spawn` die Möglichkeit, ein Fahrzeug oder eine Kiste mit dem Datenbankloadout zu spawnen. Wenn der Missionsbauer das genannte Objekt mit der richtigen Bezeichnung verbaut hat, so löst ein Klick auf den Button "Spawn Loadout" einen Spawn aus. Dieser prüft, ob sich andere Fahrzeuge auf dem Spawnobjekt befinden und verhindert in diesem Fall einen Spawn. Ansonsten wird das Fahrzeug/die Kiste gespawnt. 
+
+Der Button "Räume Spawn" sorgt wie erwartet dafür, dass alle Objekte vom Typ Fahrzeug oder ThingX im Radius von 4 m um das Spawnobjekt gelöscht werden (ohne Nachfrage! Daher die rote Farbe)
 
 ### Loadout Save
 ![Der Dialog Save im Spiel](http://i.imgur.com/fxwh42s.png)
