@@ -4,5 +4,6 @@ Nachfolgend eine Übersicht über den Inhalt der Datenbank. Dies sind nur Screen
 
 Die Tabelle wird verkürzt wiedergegeben, für den genauen Inhalt des Loadouts bitte bei eurem Zugführer nachfragen oder auf dem Server selbst nachschauen.
 
-![IDs Seite 1](http://i.imgur.com/Ez00JDj.png)
-![IDs Seite 2](http://i.imgur.com/GADGOCh.png)
+![IDs Seite 1](http://i.imgur.com/M82OhdA.png)
+![IDs Seite 2](http://i.imgur.com/z0gzBJH.png)
+![IDs Seite 3](http://i.imgur.com/pMedqs6.png)
