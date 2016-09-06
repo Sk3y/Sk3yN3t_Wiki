@@ -7,6 +7,6 @@ Dazu kann die Funktion
 ["jgkp_log_fps", [time]] call CBA_fnc_clientToServerEvent;
 ```
 
-time (int): Zeit in Sekunden, die geloggt werden.
+`time` (int): Zeit in Sekunden, die geloggt werden.
 
 Die Funktion loggt während der angegebenen Zeitspanne von `time` Sekunden die FPS aller Spieler, der headless clients sowie des Servers und speichert das Ergebnis in der Datenbank. Bei Interesse an den Daten kann Sk3y kontaktiert werden, der für uns eine Visualisierung der Rohdaten geschrieben hat!
