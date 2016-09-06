@@ -6,4 +6,4 @@ Die Tabelle wird verkürzt wiedergegeben, für den genauen Inhalt des Loadouts b
 
 ![IDs Seite 1](http://i.imgur.com/4s0PjrC.png)
 ![IDs Seite 2](http://i.imgur.com/PRD3zwF.png)
-![IDs Seite 3](http://i.imgur.com/VeKdbmF.png)
+![IDs Seite 3](http://i.imgur.com/TVzGKKi.png)
