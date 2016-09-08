@@ -37,7 +37,7 @@ bool = Boolean
 - [[Ausrüsten eines Spielers mit einem DB-Loadout|Funktionen-zur-Loadoutabfrage#spieler-mit-loadout-ausrüsten]]
 - [[Ausrüsten einer Kiste/eines Fahrzeuges|Funktionen-zur-Logistikabfrage#kisten-und-fahrzeuge-einmalig-mit-loadout-befüllen]]
 - [[Dialog zur Anzeige aller Loadouts|Der-Loadout-Dialog]]
--- [[Performancemessung|Performancemessung]]
+- [[Performancemessung|Performancemessung]]
 
 ### Der Loadout-Dialog im Spiel
 - [[Der-Loadout-Dialog|Der-Loadout-Dialog]]
