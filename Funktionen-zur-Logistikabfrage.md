@@ -4,7 +4,7 @@ Alle folgenden Funktionen dienen dazu, Kisten- oder Fahrzeug-Loadouts aus der DB
 ### Kisten und Fahrzeuge einmalig mit Loadout befüllen
 
 ```SQF
-    ["jgkp_fill_crate", [crate, id]] call CBA_fnc_clientToServerEvent;
+    ["jgkp_fill_crate", [crate, id]] call CBA_fnc_serverEvent;
 ```
 **Beschreibung:** Mit dieser Zeile könnt ihr per addAction oder Script eine benannte Kiste oder ein Fahrzeug automatisch einmalig mit einem Loadout füllen, das in der DB vorhanden ist (Name "loadout" ist durch den Namen in der DB zu ersetzen)
 
@@ -20,7 +20,7 @@ Die Lösung nutzt daher einen Auslöser, der sich um die initiale Beladung kümm
 
 1. Erstelle einen Auslöser beliebiger Größe, Einstellungen egal und bei der Bedingung: ```isServer && time > 5```
 
-2. Füge dem Auslöser für jede Kiste und jedes Fahrzeug einen Befehl hinzu, der die Kiste bzw. das Fahrzeug mit dem gewünschten Loadout belädt, z.B. : ```["jgkp_fill_crate", [kiste1, 1]] call CBA_fnc_clientToServerEvent;```
+2. Füge dem Auslöser für jede Kiste und jedes Fahrzeug einen Befehl hinzu, der die Kiste bzw. das Fahrzeug mit dem gewünschten Loadout belädt, z.B. : ```["jgkp_fill_crate", [kiste1, 1]] call CBA_fnc_serverEvent;```
 
 Der Auslöser sieht dann im Grunde wie folgt aus:
 ![Auslöser](http://i.imgur.com/prMIO0J.png)
@@ -33,7 +33,7 @@ Möchtet ihr ein Loadout z.B. fest mit einem Aktionmenüeintrag verbinden, ist d
 
 ```SQF
 this addAction ["<t color='#00ff00' size='1.2'>Loadout GrpFhr</t>", {
-["jgkp_fill_crate", [crate, id]] call CBA_fnc_clientToServerEvent;
+["jgkp_fill_crate", [crate, id]] call CBA_fnc_serverEvent;
 }];
 ```
 Dieser Befehl kommt in die Init-Zeile eines beliebigen Objektes, dass den Aktioneintrag besitzen soll. Wird er ausgeführt, so wird die Kiste mit dem Namen `crate` mit dem Loadout mit der angegebenen `id` befüllt.
