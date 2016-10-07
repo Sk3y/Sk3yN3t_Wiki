@@ -17,7 +17,7 @@ Das soll als Vorbemerkung genügen. Jetzt schauen wir uns eine Funktion für die
 
 ## Die DB-Funktionen
 ```SQF
-  ["jgkp_get_rank",[player]] call CBA_fnc_clientToServerEvent;
+  ["jgkp_get_rank",[player]] call CBA_fnc_serverEvent;
 ```
 
 Obwohl wir im Spiel für die DB-Funktionen das System der Event-Handler verwenden, ist es für euch als Benutzer nicht wichtig, sich mit Event-Handlern auszukennen.
@@ -46,7 +46,8 @@ Damit ist der Ablauf wie folgt:
 
 Ihr könnt also z.B. den Rang abfragen und dann `ResultXMLRang` weiter benutzen. Wichtig ist, dass der Rückgabewert ein String ist:
 ```SQF
-["jgkp_get_rank",[player]] call CBA_fnc_clientToServerEvent;
+ResultXMLRang = nil; // Var leeren vor Abfrage!
+["jgkp_get_rank", [player]] call CBA_fnc_serverEvent;
 waitUntil{!isNil "ResultXMLRang"};
 _rang = parseNumber ResultXMLRang; //Überführt String in Number
 if ( _rang > 6) then {
@@ -55,8 +56,6 @@ if ( _rang > 6) then {
 } else {
    hint "Dein Rang ist nicht hoch genug...";
 };
-
-ResultXMLRang = nil; // Var leeren!
 ```
 
 In diesem Beispiel frage ich den Rang eines Spielers (also mir) zunächst ab und warte, bis die Information verfügbar ist. Danach wandle in den Text in eine Zahl um und führe den weiteren Code nur aus, wenn der Rang größer als 6 ist. Andernfalls teile ich dem Spieler mit, dass er leider nicht den erforderlichen Rang besitzt. Am Ende müssen wir die Variable leeren, da in einem nächsten Aufruf durchaus ein Fehler passieren könnte, z.B. wenn wir ein falsches Objekt übergeben. Der Server kann aber keine Fehler an uns zurückmelden, daher wird er einfach gar nichts tun und wir erhalten keine Fehlermeldung. Hätten wir die Variable `ResultXMLRang` jetzt nicht klugerweise geleert, so hätte sie immer noch den Rang vom ersten Aufruf gespeichert und wir könnten nie feststellen, ob das ein alter oder der neue Wert ist.
