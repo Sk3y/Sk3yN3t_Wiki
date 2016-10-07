@@ -3,7 +3,7 @@ Alle folgenden Funktionen dienen dazu, Loadouts aus der DB zur Verfügung zu ste
 
 ### Spieler mit Loadout ausrüsten
 ```SQF
-    ["jgkp_equip_loadout", [unit, id]] call CBA_fnc_clientToServerEvent;
+    ["jgkp_equip_loadout", [unit, id]] call CBA_fnc_serverEvent;
 ```
 **Beschreibung:** Rüstet die übergebene Einheit `unit` mit dem Inhalt des Loadouts für die gegebene ID (PK in DB) aus. 
 
