@@ -22,7 +22,7 @@ object addAction ["Waffenkammer öffnen", {createDialog "DBLoadoutEntry";}];
 Der Dialog existiert in zwei Varianten: Mit allen Loadouts, die in der DB gespeichert sind (public + nicht public) sowie einer eingeschränkten Variante für die Public-Server. Mithilfe der folgenden Code-Zeile in der initServer.sqf könnt ihr dem Server eure Wunscheinstellung mitteilen:
 ```SQF
 JGKP_DB_onlyPublic = 0|1
-["jgkp_refresh_request"] call CBA_fnc_clientToServerEvent;
+["jgkp_refresh_request"] call CBA_fnc_serverEvent;
 ```
 * 0: ist die default-Einstellung und lässt alle Loadouts zu.
 * 1: ist die eingeschränkte Einstellung und lässt nur Loadouts zu, die isPublic = 1 besitzen.
