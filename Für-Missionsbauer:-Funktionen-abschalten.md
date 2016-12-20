@@ -1,6 +1,6 @@
 # Funktionen abschalten
 
-Missionsbauer haben die Möglichkeit, bestimmte Funktionen abzuschalten. Solange der Missionsbauer nichts tut, gelten grundsätzlich die default-Werte, die im Addon hinterlegt sind und das heißt: Alles ist erlaubt (DebugConsol + San-Zelte für Sanitäter und an Fahrzeugen).
+Missionsbauer haben die Möglichkeit, bestimmte Funktionen abzuschalten. Solange der Missionsbauer nichts tut, gelten grundsätzlich die default-Werte, die im Addon hinterlegt sind und das heißt: Alles ist erlaubt (DebugConsole + San-Zelte für Sanitäter und an Fahrzeugen).
 
 ## Debug-Konsole abschalten
 
