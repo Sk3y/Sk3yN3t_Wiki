@@ -21,4 +21,4 @@ JGKP_FH_big_disabled = true; // für Fahrzeuge
 
 ## Ändern während der Mission
 
-Da die Variablen für den Zugriff im condition-Eintrag der ACE-Actionen vorkommen, ist es möglich, die obigen variablen auch während der Mission zu ändern. Damit kann also auch während des Spiels der Zugriff verwehrt oder wieder erlaubt werden (z.B. die San-Zelte als Missionsziel nach der Eroberung einer Basis)
+Da die Variablen für den Zugriff im condition-Eintrag der ACE-Actionen vorkommen, ist es möglich, die obigen Variablen auch während der Mission zu ändern. Damit kann also auch während des Spiels der Zugriff verwehrt oder wieder erlaubt werden (z.B. die San-Zelte als Missionsziel nach der Eroberung einer Basis)
