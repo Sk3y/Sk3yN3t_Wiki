@@ -4,7 +4,7 @@ Das Serveraddon bietet euch ebenfalls eine Funktion zur Messung und Speicherung 
 
 Dazu kann die Funktion
 ```SQF
-["jgkp_log_fps", [time]] call CBA_fnc_clientToServerEvent;
+["jgkp_log_fps", [time]] call CBA_fnc_serverEvent;
 ```
 
 `time` (int): Zeit in Sekunden, die geloggt werden.
